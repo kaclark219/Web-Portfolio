@@ -13,10 +13,10 @@ function Home() {
                     <h2>
                         <Typewriter
                             words={[
-                                "i'm a web developer",
-                                "i like making games",
-                                "i'm a digi cam addict",
-                                "i design fun graphics"
+                                "i'm a web developer ",
+                                "i like making games ",
+                                "i'm a digi cam addict ",
+                                "i design fun graphics "
                             ]}
                             loop={true}
                             cursor
