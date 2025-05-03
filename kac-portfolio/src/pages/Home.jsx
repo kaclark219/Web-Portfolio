@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter';
+import { ArrowRight } from 'phosphor-react';
 import little_me from "../assets/little-me.png";
-import ds_sprites from "../assets/ds-sprites.png";
+import ds_sprites from "../assets/ds-sprites-small.png";
 import "../style/style.css";
 
 function Home() {
@@ -16,7 +17,7 @@ function Home() {
                                 "i'm a web developer ",
                                 "i like making games ",
                                 "i'm a digi cam addict ",
-                                "i design fun graphics "
+                                "i design fun graphics ",
                             ]}
                             loop={true}
                             cursor
@@ -32,7 +33,7 @@ function Home() {
                 </div>
             </div>
             <div className="learn-more-btn">
-                <Link to="/about" className="btn">Learn More</Link>
+                <Link to="/about" className="btn">Learn More <ArrowRight size={32} color="#0e103d" /></Link>
             </div>
             <div className="image-links">
                 <div className="ds">
