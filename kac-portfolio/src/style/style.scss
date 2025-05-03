@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=VT323&display=swap');
 @import 'sass/reset';
 @import 'sass/mixins';
 @import 'sass/colors';
 
 h1 {
-    font-size: 60px;
-    color: greenyellow;
+    font-family: "VT323", monospace;
+    font-size: 96px;
+    color: $navy;
 }
+
+h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 48px;
+    color: $green;
+}
+
+@import 'sass/home';

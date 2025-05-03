@@ -1,0 +1,19 @@
+.ds-sprite {
+    width: 1920px;
+    height: 1920px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transform: scale(0.25); /* Scale it down to 480px visually */
+    transform-origin: top left;
+}
+
+@keyframes play-frames {
+    from { background-position: 0 0; }
+    to { background-position: -13440px 0; } /* 1920px × 7 frames */
+}
+
+.ds-sprite:hover {
+    animation: play-frames 1s steps(7) infinite;
+}
+
