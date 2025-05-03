@@ -17,3 +17,16 @@
     animation: play-frames 1s steps(7) infinite;
 }
 
+.hero-text {
+    h1 {
+        font-family: "VT323", monospace;
+        color: $navy;
+        font-size: 5vw;
+    }
+    h2 {
+        font-family: "Space Grotesk", sans-serif;
+        color: $green;
+        font-size: 2.5vw;
+    }
+}
+

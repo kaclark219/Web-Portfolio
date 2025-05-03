@@ -3,16 +3,7 @@
 @import 'sass/mixins';
 @import 'sass/colors';
 
-h1 {
-    font-family: "VT323", monospace;
-    font-size: 96px;
-    color: $navy;
+body {
+    background-color: whitesmoke;
 }
-
-h2 {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 48px;
-    color: $green;
-}
-
 @import 'sass/home';

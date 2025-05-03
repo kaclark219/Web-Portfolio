@@ -123,16 +123,8 @@ display:revert; revert to element instead of attribute */
   display: none;
 }
 
-h1 {
-  font-family: "VT323", monospace;
-  font-size: 96px;
-  color: #0e103d;
-}
-
-h2 {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 48px;
-  color: #9caf5e;
+body {
+  background-color: whitesmoke;
 }
 
 .ds-sprite {
@@ -155,4 +147,15 @@ h2 {
 }
 .ds-sprite:hover {
   animation: play-frames 1s steps(7) infinite;
+}
+
+.hero-text h1 {
+  font-family: "VT323", monospace;
+  color: #0e103d;
+  font-size: 5vw;
+}
+.hero-text h2 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #9caf5e;
+  font-size: 2.5vw;
 }/*# sourceMappingURL=style.css.map */
