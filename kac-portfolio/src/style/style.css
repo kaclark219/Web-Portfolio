@@ -141,7 +141,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor: pointer;
-  transform: scale(0.25); /* Scale it down to 480px visually */
+  transform: scale(0.153125);
   transform-origin: top left;
 }
 
