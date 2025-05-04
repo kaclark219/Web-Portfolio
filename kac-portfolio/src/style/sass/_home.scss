@@ -1,5 +1,8 @@
 .home {
-    padding: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .hero {
@@ -69,10 +72,15 @@
         right: 10vw;
         top: -150px;
     }
+    .gameboy {
+        position: absolute;
+        right: 30vw;
+        top: 90px;
+    }
 }
 
 
-@keyframes play-frames {
+@keyframes play-frames-ds {
     from { background-position: 0 0; }
     to { background-position: -2058px 0; }
 }
@@ -84,8 +92,24 @@
     cursor: pointer;
     transform: rotate(13.204deg);
     transform-origin: top left;
-
     &:hover {
-        animation: play-frames .75s steps(7) infinite;
+        animation: play-frames-ds .75s steps(7) infinite;
+    }
+}
+
+@keyframes play-frames-gameboy {
+    from { background-position: 0 0; }
+    to { background-position: -1880px 0; }
+}
+.gameboy-sprite {
+    width: 240px;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transform: rotate(-4.37deg);
+    transform-origin: top left;
+    &:hover {
+        animation: play-frames-gameboy 1s steps(8) infinite
     }
 }

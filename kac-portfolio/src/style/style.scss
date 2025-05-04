@@ -6,4 +6,42 @@
 body {
     background-color: $white;
 }
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+.navbar {
+    padding: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+    background-color: $white;
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        svg {
+            color: $navy;
+        }
+        li:not(:first-child) {
+            position: relative;
+            top: -15px;
+            transition: background-color 0.3s ease;
+            &:hover, &:focus {
+                color: $navy-hover;
+                animation: wiggle 0.5s forwards;
+                svg {
+                    color: $navy-hover;
+                }
+            }
+        }
+    }
+}
+
 @import 'sass/home';

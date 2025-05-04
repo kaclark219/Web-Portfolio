@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import name_logo from './assets/name-logo.png'
 import './style/style.css'
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
@@ -20,11 +21,20 @@ function App() {
     <BrowserRouter>
       <nav className="navbar">
         <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
+          <li>
+            <Link to="/">
+              <img src={name_logo} alt="Katelyn Clark logo" className="name-logo" />
+            </Link>
+          </li>
           <li><Link to="/about">About Me</Link></li>
           <li><Link to="/programming">Programming</Link></li>
           <li><Link to="/design">Design</Link></li>
           <li><Link to="/games">Games</Link></li>
+          <li>
+            <a href="https://github.com/kaclark219" target="_blank" rel="noopener noreferrer">
+              <GithubLogo size={32}/>
+            </a>
+          </li>
         </ul>
       </nav>
       

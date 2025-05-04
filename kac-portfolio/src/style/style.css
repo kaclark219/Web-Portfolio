@@ -126,8 +126,58 @@ body {
   background-color: #f5f5f5;
 }
 
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.navbar {
+  padding: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 22px;
+  background-color: #f5f5f5;
+}
+.navbar .nav-links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar .nav-links svg {
+  color: #0e103d;
+}
+.navbar .nav-links li:not(:first-child) {
+  position: relative;
+  top: -15px;
+  transition: background-color 0.3s ease;
+}
+.navbar .nav-links li:not(:first-child):hover, .navbar .nav-links li:not(:first-child):focus {
+  color: #252866;
+  animation: wiggle 0.5s forwards;
+}
+.navbar .nav-links li:not(:first-child):hover svg, .navbar .nav-links li:not(:first-child):focus svg {
+  color: #252866;
+}
+
 .home {
-  padding: 120px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .hero {
@@ -205,8 +255,13 @@ body {
   right: 10vw;
   top: -150px;
 }
+.image-links .gameboy {
+  position: absolute;
+  right: 30vw;
+  top: 90px;
+}
 
-@keyframes play-frames {
+@keyframes play-frames-ds {
   from {
     background-position: 0 0;
   }
@@ -224,5 +279,26 @@ body {
   transform-origin: top left;
 }
 .ds-sprite:hover {
-  animation: play-frames 0.75s steps(7) infinite;
+  animation: play-frames-ds 0.75s steps(7) infinite;
+}
+
+@keyframes play-frames-gameboy {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1880px 0;
+  }
+}
+.gameboy-sprite {
+  width: 240px;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  transform: rotate(-4.37deg);
+  transform-origin: top left;
+}
+.gameboy-sprite:hover {
+  animation: play-frames-gameboy 1s steps(8) infinite;
 }/*# sourceMappingURL=style.css.map */
