@@ -279,7 +279,7 @@ body {
   transform-origin: top left;
 }
 .ds-sprite:hover {
-  animation: play-frames-ds 0.75s steps(7) infinite;
+  animation: play-frames-ds 0.85s steps(7) infinite;
 }
 
 @keyframes play-frames-gameboy {
@@ -300,5 +300,5 @@ body {
   transform-origin: top left;
 }
 .gameboy-sprite:hover {
-  animation: play-frames-gameboy 1s steps(8) infinite;
+  animation: play-frames-gameboy 1.3s steps(8) infinite;
 }/*# sourceMappingURL=style.css.map */

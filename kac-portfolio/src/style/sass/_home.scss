@@ -93,7 +93,7 @@
     transform: rotate(13.204deg);
     transform-origin: top left;
     &:hover {
-        animation: play-frames-ds .75s steps(7) infinite;
+        animation: play-frames-ds .85s steps(7) infinite;
     }
 }
 
@@ -110,6 +110,6 @@
     transform: rotate(-4.37deg);
     transform-origin: top left;
     &:hover {
-        animation: play-frames-gameboy 1s steps(8) infinite
+        animation: play-frames-gameboy 1.3s steps(8) infinite
     }
 }
