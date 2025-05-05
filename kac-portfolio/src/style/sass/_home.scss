@@ -69,12 +69,17 @@
     height: 350px;
     .ds {
         position: absolute;
-        right: 10vw;
-        top: -150px;
+        right: 9vw;
+        top: -250px;
     }
     .gameboy {
         position: absolute;
         right: 30vw;
+        top: 0px;
+    }
+    .wii {
+        position: absolute;
+        right: 30px;
         top: 90px;
     }
 }
@@ -90,9 +95,9 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     cursor: pointer;
-    transform: rotate(13.204deg);
+    transform: rotate(11.204deg);
     transform-origin: top left;
-    &:hover {
+    &:hover, &:focus {
         animation: play-frames-ds .85s steps(7) infinite;
     }
 }
@@ -109,7 +114,22 @@
     cursor: pointer;
     transform: rotate(-4.37deg);
     transform-origin: top left;
-    &:hover {
+    &:hover, &:focus {
         animation: play-frames-gameboy 1.3s steps(8) infinite
+    }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+.wii {
+    img {
+        width: 250px;
+        animation: spin 5s linear infinite;
+        animation-play-state: paused;
+        &:hover, &:focus {
+            animation-play-state: running;
+        }
     }
 }
