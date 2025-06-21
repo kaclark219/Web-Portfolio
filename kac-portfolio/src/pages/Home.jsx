@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { ArrowRight } from 'phosphor-react';
 import little_me from "../assets/little-me.png";
 import ds_sprites from "../assets/ds-sprites-small.png";
-import gameboy_sprites from "../assets/gameboy-sprites-small.png";
+import gameboy_sprites from "../assets/gameboy-fixed.png";
 import wii_disc from "../assets/wii-disc.png";
 import "../style/style.css";
 

@@ -301,7 +301,6 @@ body {
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor: pointer;
-  transform: rotate(-4.37deg);
   transform-origin: top left;
 }
 .gameboy-sprite:hover, .gameboy-sprite:focus {

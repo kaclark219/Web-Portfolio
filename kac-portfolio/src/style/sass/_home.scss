@@ -112,7 +112,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     cursor: pointer;
-    transform: rotate(-4.37deg);
+    // transform: rotate(-4.37deg);
     transform-origin: top left;
     &:hover, &:focus {
         animation: play-frames-gameboy 1.3s steps(8) infinite
