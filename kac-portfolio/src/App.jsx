@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import name_logo from './assets/logo-name.png'
-import logo_layer from './assets/logo-star-normal.png'
-import logo_hover from './assets/logo-star-hover.png'
+import name_logo from './assets/logo-name.PNG'
+import logo_layer from './assets/logo-star-normal.PNG'
+import logo_hover from './assets/logo-star-hover.PNG'
 import './style/style.css'
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
