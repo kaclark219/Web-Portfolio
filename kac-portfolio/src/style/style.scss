@@ -17,7 +17,7 @@ body {
 
 .navbar {
     padding: 40px;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-left: 60px;
     padding-right: 60px;
     font-family: "Space Grotesk", sans-serif;
@@ -29,20 +29,20 @@ body {
         flex-direction: row;
         align-items: center;
         .logo-link {
-            width: 80%;
-            height: auto;
             .logo-wrapper {
                 position: relative;
                 width: fit-content;
                 .name-logo {
-                    width: 100%;
+                    width: 80%;
+                    height: auto;
                     display: block;
                 }
                 .logo-star {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    width: 100%;
+                    width: 80%;
+                    height: auto;
                     pointer-events: none;
                     &.hover {
                         opacity: 0;
