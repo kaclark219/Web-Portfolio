@@ -157,6 +157,35 @@ body {
   flex-direction: row;
   align-items: center;
 }
+.navbar .nav-links .logo-link {
+  width: 80%;
+  height: auto;
+}
+.navbar .nav-links .logo-link .logo-wrapper {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.navbar .nav-links .logo-link .logo-wrapper .name-logo {
+  width: 100%;
+  display: block;
+}
+.navbar .nav-links .logo-link .logo-wrapper .logo-star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.navbar .nav-links .logo-link .logo-wrapper .logo-star.hover {
+  opacity: 0;
+}
+.navbar .nav-links .logo-link:hover .logo-star.hover, .navbar .nav-links .logo-link:focus .logo-star.hover {
+  opacity: 1;
+}
+.navbar .nav-links .logo-link:hover .logo-star:not(.hover), .navbar .nav-links .logo-link:focus .logo-star:not(.hover) {
+  opacity: 0;
+}
 .navbar .nav-links svg {
   color: #0e103d;
 }

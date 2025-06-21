@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import name_logo from './assets/name-logo.png'
+import name_logo from './assets/logo-name.png'
+import logo_layer from './assets/logo-star-normal.png'
+import logo_hover from './assets/logo-star-hover.png'
 import './style/style.css'
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
@@ -22,8 +24,12 @@ function App() {
       <nav className="navbar">
         <ul className="nav-links">
           <li>
-            <Link to="/">
-              <img src={name_logo} alt="Katelyn Clark logo" className="name-logo" />
+            <Link to="/" className="logo-link">
+              <div className="logo-wrapper">
+                <img src={name_logo} alt="Katelyn Clark logo" className="name-logo" />
+                <img src={logo_layer} alt="Star overlay" className="logo-star" />
+                <img src={logo_hover} alt="Star hover overlay" className="logo-star hover" />
+              </div>
             </Link>
           </li>
           <li><Link to="/about">About Me</Link></li>
