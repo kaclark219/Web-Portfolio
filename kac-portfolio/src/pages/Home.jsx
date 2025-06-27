@@ -18,7 +18,7 @@ function Home() {
                             words={[
                                 "i'm a web developer ",
                                 "i like making games ",
-                                "i'm a grad student ",
+                                "i'm a cs grad student ",
                                 "i design fun graphics ",
                             ]}
                             loop={true}
