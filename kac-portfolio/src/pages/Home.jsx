@@ -26,7 +26,7 @@ function Home() {
                             cursorStyle="|"
                             typeSpeed={70}
                             deleteSpeed={50}
-                            delaySpeed={2000}
+                            delaySpeed={1500}
                         />
                     </h2>
                 </div>
