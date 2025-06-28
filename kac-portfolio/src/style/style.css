@@ -368,4 +368,54 @@ body {
 }
 .wii img:hover, .wii img:focus {
   animation-play-state: running;
+}
+
+.me-photos .gameboy-frame-wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+.me-photos .gameboy-frame-wrapper .screen-img {
+  position: absolute;
+  top: 40px;
+  left: 105px;
+  width: 45%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.me-photos .gameboy-frame-wrapper .screen-img.fade-out {
+  opacity: 0;
+}
+.me-photos .gameboy-frame-wrapper .frame-img {
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+.me-photos .gameboy-frame-wrapper .arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  z-index: 4;
+  color: #0e103d;
+  cursor: pointer;
+}
+.me-photos .gameboy-frame-wrapper .arrow.left {
+  left: 5px;
+}
+.me-photos .gameboy-frame-wrapper .arrow.right {
+  right: 5px;
+}
+.me-photos .gameboy-frame-wrapper .arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+.me-photos .gameboy-frame-wrapper .arrow:hover svg {
+  color: #252866;
 }/*# sourceMappingURL=style.css.map */
