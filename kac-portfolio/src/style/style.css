@@ -188,17 +188,35 @@ body {
 .navbar .nav-links svg {
   color: #0e103d;
 }
-.navbar .nav-links li:not(:first-child) {
+.navbar .nav-links li:not(:first-child):not(.nav-icon) {
   position: relative;
   top: -15px;
   transition: background-color 0.3s ease;
 }
-.navbar .nav-links li:not(:first-child):hover, .navbar .nav-links li:not(:first-child):focus {
+.navbar .nav-links li:not(:first-child):not(.nav-icon):hover, .navbar .nav-links li:not(:first-child):not(.nav-icon):focus {
   color: #252866;
   animation: wiggle 0.5s forwards;
 }
-.navbar .nav-links li:not(:first-child):hover svg, .navbar .nav-links li:not(:first-child):focus svg {
+.navbar .nav-links .nav-icon-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.navbar .nav-links .nav-icon-group .nav-icon {
+  position: relative;
+  top: -15px;
+}
+.navbar .nav-links .nav-icon-group .nav-icon a {
+  display: inline-flex;
+  align-items: center;
+}
+.navbar .nav-links .nav-icon-group .nav-icon a svg {
+  color: #0e103d;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.navbar .nav-links .nav-icon-group .nav-icon a:hover svg, .navbar .nav-links .nav-icon-group .nav-icon a:focus svg {
   color: #252866;
+  animation: wiggle 0.5s forwards;
 }
 
 .home {

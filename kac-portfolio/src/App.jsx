@@ -9,7 +9,7 @@ import './style/style.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Parallax } from 'react-parallax';
 import { motion } from 'framer-motion';
-import { GithubLogo, ArrowRight, GameController } from 'phosphor-react';
+import { GithubLogo, ArrowRight, GameController, LinkedinLogo } from 'phosphor-react';
 
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -36,11 +36,23 @@ function App() {
           <li><Link to="/programming">Programming</Link></li>
           <li><Link to="/design">Design</Link></li>
           <li><Link to="/games">Games</Link></li>
-          <li>
-            <a href="https://github.com/kaclark219" target="_blank" rel="noopener noreferrer">
-              <GithubLogo size={32}/>
-            </a>
-          </li>
+          <div className="nav-icon-group">
+            <li className='nav-icon'>
+              <a href="https://kaclark219.itch.io/" target="_blank" rel="noopener noreferrer">
+                <GameController size={32}/>
+              </a>
+            </li>
+            <li className='nav-icon'>
+              <a href="https://www.linkedin.com/in/katelyn-a-clark/" target="_blank" rel="noopener noreferrer">
+                <LinkedinLogo size={32}/>
+              </a>
+            </li>
+            <li className='nav-icon'>
+              <a href="https://github.com/kaclark219" target="_blank" rel="noopener noreferrer">
+                <GithubLogo size={32}/>
+              </a>
+            </li>
+          </div>
         </ul>
       </nav>
       

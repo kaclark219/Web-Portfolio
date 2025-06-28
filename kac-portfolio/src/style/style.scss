@@ -61,15 +61,38 @@ body {
         svg {
             color: $navy;
         }
-        li:not(:first-child) {
+        li:not(:first-child):not(.nav-icon) {
             position: relative;
             top: -15px;
             transition: background-color 0.3s ease;
             &:hover, &:focus {
                 color: $navy-hover;
                 animation: wiggle 0.5s forwards;
-                svg {
-                    color: $navy-hover;
+            }
+        }
+        .nav-icon-group {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            .nav-icon {
+                position: relative;
+                top: -15px;
+    
+                a {
+                    display: inline-flex;
+                    align-items: center;
+
+                    svg {
+                        color: $navy;
+                        transition: color 0.3s ease, transform 0.3s ease;
+                    }
+
+                    &:hover, &:focus {
+                        svg {
+                            color: $navy-hover;
+                            animation: wiggle 0.5s forwards;
+                        }
+                    }
                 }
             }
         }
@@ -77,3 +100,4 @@ body {
 }
 
 @import 'sass/home';
+@import 'sass/about';
