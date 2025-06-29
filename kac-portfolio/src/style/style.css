@@ -472,4 +472,23 @@ body {
 }
 .about-me .about-top .about-text p {
   text-align: justify;
+}
+.about-me .about-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.about-me .about-bottom .tech-skills {
+  display: flex;
+}
+.about-me .about-bottom .tech-skills .tech-skills-header {
+  transform: rotate(-90deg);
+  transform-origin: center;
+  margin-left: -65px;
+}
+.about-me .about-bottom .skills-right img:hover, .about-me .about-bottom .skills-right img:focus {
+  animation: wiggle 0.5s forwards;
 }/*# sourceMappingURL=style.css.map */

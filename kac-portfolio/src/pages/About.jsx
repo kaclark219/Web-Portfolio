@@ -66,10 +66,15 @@ function About() {
             <div className="about-bottom">
                 <div className="tech-skills">
                     <div className="tech-skills-header">
-
+                        <h2>Tech Skills</h2>
                     </div>
                     <div className="skills-grid">
+                        <div className="grid-r1">
 
+                        </div>
+                        <div className="grid-r2">
+                            
+                        </div>
                     </div>
                 </div>
                 <div className="skills-right">

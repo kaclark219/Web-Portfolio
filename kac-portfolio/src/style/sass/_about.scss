@@ -94,4 +94,27 @@
             }
         }
     }
+    .about-bottom {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+        margin-top: 40px;
+        justify-content: space-between;
+        .tech-skills {
+            display: flex;
+            .tech-skills-header {
+                transform: rotate(-90deg);
+                transform-origin: center;
+                margin-left: -65px;
+            }
+        }
+        .skills-right {
+            img {
+                &:hover, &:focus {
+                    animation: wiggle 0.5s forwards;
+                }
+            }
+        }
+    }
 }
