@@ -39,11 +39,46 @@
             &.right {
                 right: 5px;
             }
-            &:hover {
+            &:hover, &:focus {
                 svg {
                     color: $navy-hover;
                 }
                 transform: translateY(-50%) scale(1.1);
+            }
+        }
+    }
+}
+
+.about-me {
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    h1 {
+        font-family: "VT323", monospace;
+        color: $green;
+        font-size: 48px;
+    }
+    h2 {
+        font-family: "VT323", monospace;
+        color: $purple;
+        font-size: 48px;
+    }
+    p {
+        font-family: "Space Grotesk", sans-serif;
+        color: $navy;
+        font-size: 20px;
+        margin-top: 20px;
+        line-height: 1.6;
+    }
+    .about-top {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        align-items: center;
+        .about-text {
+            p {
+                text-align: justify;
             }
         }
     }

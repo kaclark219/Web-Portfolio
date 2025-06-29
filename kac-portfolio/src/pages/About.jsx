@@ -43,7 +43,7 @@ function About() {
     };
 
     return (
-        <div>
+        <div className ="about-me">
             <div className="about-top">
                 <div className="me-photos">
                     <div className="gameboy-frame-wrapper">
@@ -58,7 +58,9 @@ function About() {
                     </div>
                 </div>
                 <div className="about-text">
-
+                    <h1>About Me</h1>
+                    <p>Hello! I'm Katelyn– a full-stack developer & designer with a love for building interactive experiences, whether that's a cozy horror game, a fun web app, or a brand identity + use cases from the ground up. I recently graduated from Texas A&M University with a Bachelor of Arts in Computer Science + a minor in Graphic Design, and I'm currently working towards my Master's in CS (with a focus in graphics, visualization + a certificate in AI) at the Rochester Institute of Technology. I've been involved in everything from game jams to leadership in campus orgs like Alpha Omega Epsilon & Aggie Internship Club. I'm especially interested in the overlap between design and development to create things that are not only functional, but thoughtful, expressive, & tons of fun to use.</p>
+                    <p>If you have any questions or opportunities, feel free to reach out to any of my linked methods of communication. Thanks!</p>
                 </div>
             </div>
             <div className="about-bottom">

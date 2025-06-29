@@ -413,9 +413,42 @@ body {
 .me-photos .gameboy-frame-wrapper .arrow.right {
   right: 5px;
 }
-.me-photos .gameboy-frame-wrapper .arrow:hover {
+.me-photos .gameboy-frame-wrapper .arrow:hover, .me-photos .gameboy-frame-wrapper .arrow:focus {
   transform: translateY(-50%) scale(1.1);
 }
-.me-photos .gameboy-frame-wrapper .arrow:hover svg {
+.me-photos .gameboy-frame-wrapper .arrow:hover svg, .me-photos .gameboy-frame-wrapper .arrow:focus svg {
   color: #252866;
+}
+
+.about-me {
+  padding-left: 220px;
+  padding-right: 220px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.about-me h1 {
+  font-family: "VT323", monospace;
+  color: #9caf5e;
+  font-size: 48px;
+}
+.about-me h2 {
+  font-family: "VT323", monospace;
+  color: #69306d;
+  font-size: 48px;
+}
+.about-me p {
+  font-family: "Space Grotesk", sans-serif;
+  color: #0e103d;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+.about-me .about-top {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+}
+.about-me .about-top .about-text p {
+  text-align: justify;
 }/*# sourceMappingURL=style.css.map */
