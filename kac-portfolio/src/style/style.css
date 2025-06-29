@@ -461,6 +461,9 @@ body {
   margin-top: 20px;
   line-height: 1.6;
 }
+.about-me p strong {
+  font-weight: 550;
+}
 .about-me .about-top {
   display: flex;
   flex-direction: row;
