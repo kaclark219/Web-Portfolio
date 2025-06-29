@@ -51,6 +51,7 @@
                 svg {
                     color: $navy-hover;
                 }
+                transform: translateY(-50%);
                 animation: wiggle 0.5s forwards;
             }
         }
