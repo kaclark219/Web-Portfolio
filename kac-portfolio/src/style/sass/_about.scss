@@ -50,9 +50,9 @@
             &:hover, &:focus {
                 svg {
                     color: $navy-hover;
+                    animation: wiggle 0.5s forwards;
                 }
                 transform: translateY(-50%);
-                animation: wiggle 0.5s forwards;
             }
         }
     }

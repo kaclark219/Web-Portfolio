@@ -432,10 +432,10 @@ body {
 }
 .me-photos .gameboy-frame-wrapper .arrow:hover, .me-photos .gameboy-frame-wrapper .arrow:focus {
   transform: translateY(-50%);
-  animation: wiggle 0.5s forwards;
 }
 .me-photos .gameboy-frame-wrapper .arrow:hover svg, .me-photos .gameboy-frame-wrapper .arrow:focus svg {
   color: #252866;
+  animation: wiggle 0.5s forwards;
 }
 
 .about-me {
