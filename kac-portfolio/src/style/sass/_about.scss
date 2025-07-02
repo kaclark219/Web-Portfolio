@@ -190,14 +190,14 @@
                 width: 60%;
                 height: 60%;
                 border-radius: 5%;
-                background-color: rgba(255, 255, 255, 0);
+                background-color: #cbcfda00;
                 transition: background-color 0.3s ease-in-out;
                 z-index: 1;
                 transform: translate(-50%, -50%);
             }
             p {
                 font-family: "Space Grotesk", sans-serif;
-                color: $white-hover;
+                color: $navy;
                 font-size: 14px;
                 line-height: 1.1;
                 letter-spacing: -0.5px;
@@ -217,7 +217,7 @@
             }
             &:hover {
                 &::after {
-                    background-color: rgba(255, 255, 255, 0.8);
+                    background-color: #cbcfdad2;
                 }
                 .focus-overlay {
                     opacity: 1;
