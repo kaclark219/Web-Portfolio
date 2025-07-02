@@ -107,7 +107,7 @@ function About() {
         { src: unity, label: "Unity" },
         { src: ink, label: "Ink" },
         { src: arcweave, label: "Arcweave" },
-        { src: articy, label: "Articy" },
+        { src: articy, label: "Articy: draft" },
     ];
 
 
