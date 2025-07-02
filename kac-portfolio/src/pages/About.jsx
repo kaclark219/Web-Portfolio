@@ -10,6 +10,38 @@ import screen4 from "../assets/screen4.jpg";
 import screen5 from "../assets/screen5.jpg";
 import screen6 from "../assets/screen6.jpg";
 import screen7 from "../assets/screen7.jpg";
+import adobe_illustrator from "../assets/adobe-illustrator.PNG";
+import adobe_indesign from "../assets/adobe-indesign.PNG";
+import adobe_photoshop from "../assets/adobe-photoshop.PNG";
+import adobe_premiere from "../assets/adobe-premierepro.PNG";
+import arcweave from "../assets/arcweave.PNG";
+import articy from "../assets/articy.PNG";
+import c_plusplus from "../assets/c-plus-plus.PNG";
+import c_sharp from "../assets/c-sharp.PNG";
+import css from "../assets/css.PNG";
+import d3 from "../assets/d3.PNG";
+import figma from "../assets/figma.PNG";
+import flask from "../assets/flask.PNG";
+import git from "../assets/git.PNG";
+import html from "../assets/html.PNG";
+import ink from "../assets/ink.PNG";
+import java_script from "../assets/java-script.PNG";
+import java from "../assets/java.PNG";
+import jupyter_notebook from "../assets/jupyter-notebook.PNG";
+import linux from "../assets/linux.PNG";
+import matplotlib from "../assets/matplotlib.PNG";
+import my_sql from "../assets/my-sql.PNG";
+import numpy from "../assets/numpy.PNG";
+import opengl from "../assets/opengl.PNG";
+import pandas from "../assets/pandas.PNG";
+import postgresql from "../assets/postgresql.PNG";
+import python from "../assets/python.PNG";
+import react from "../assets/react.PNG";
+import sass from "../assets/sass.PNG";
+import svelte from "../assets/svelte.PNG";
+import type_script from "../assets/type-script.PNG";
+import unity from "../assets/unity.PNG";
+import vercel from "../assets/vercel.PNG";
 
 import "../style/style.css";
 
@@ -42,6 +74,42 @@ function About() {
         changeImage((prev) => (prev + 1) % screenImages.length);
     };
 
+    const skills = [
+        { src: c_plusplus, label: "C/C++" },
+        { src: python, label: "Python" },
+        { src: java, label: "Java" },
+        { src: html, label: "HTML" },
+        { src: java_script, label: "JavaScript" },
+        { src: css, label: "CSS" },
+        { src: type_script, label: "TypeScript" },
+        { src: my_sql, label: "MySQL" },
+        { src: c_sharp, label: "C#" },
+        { src: postgresql, label: "PostgreSQL" },
+        { src: react, label: "React" },
+        { src: sass, label: "Sass" },
+        { src: svelte, label: "Svelte" },
+        { src: flask, label: "Flask" },
+        { src: git, label: "Git" },
+        { src: linux, label: "Linux" },
+        { src: jupyter_notebook, label: "Jupyter Notebook" },
+        { src: numpy, label: "NumPy" },
+        { src: pandas, label: "Pandas" },
+        { src: d3, label: "D3.js" },
+        { src: matplotlib, label: "Matplotlib" },
+        { src: opengl, label: "OpenGL" },
+        { src: vercel, label: "Vercel" },
+        { src: figma, label: "Figma" },
+        { src: adobe_illustrator, label: "Adobe Illustrator" },
+        { src: adobe_indesign, label: "Adobe InDesign" },
+        { src: adobe_photoshop, label: "Adobe Photoshop" },
+        { src: adobe_premiere, label: "Adobe Premiere Pro" },
+        { src: unity, label: "Unity" },
+        { src: ink, label: "Ink" },
+        { src: arcweave, label: "Arcweave" },
+        { src: articy, label: "Articy" },
+    ];
+
+
     return (
         <div className ="about-me">
             <div className="about-top">
@@ -66,14 +134,26 @@ function About() {
             <div className="about-bottom">
                 <div className="tech-skills">
                     <div className="tech-skills-header">
-                        <h2>Tech Skills</h2>
+                        <h2>Skills</h2>
                     </div>
-                    <div className="skills-grid">
-                        <div className="grid-r1">
-
-                        </div>
-                        <div className="grid-r2">
-                            
+                    <div className="skills-scroll-wrapper">
+                        <div className="skills-track">
+                            <div className="skills-grid">
+                                {skills.map((skill, index) => (
+                                    <div className="skill-item" key={`a-${index}`}>
+                                        <img src={skill.src} alt={`${skill.label} logo`} />
+                                        <p>{skill.label}</p>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="skills-grid second">
+                                {skills.map((skill, index) => (
+                                    <div className="skill-item" key={`b-${index}`}>
+                                        <img src={skill.src} alt={`${skill.label} logo`} />
+                                        <p>{skill.label}</p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

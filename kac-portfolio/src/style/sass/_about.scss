@@ -58,6 +58,15 @@
     }
 }
 
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 .about-me {
     padding-left: 220px;
     padding-right: 220px;
@@ -106,13 +115,94 @@
             .tech-skills-header {
                 transform: rotate(-90deg);
                 transform-origin: center;
-                margin-left: -65px;
+                margin-right: -40px;
+                margin-left: 80px;
             }
         }
         .skills-right {
+            width: 100%;
             img {
                 &:hover, &:focus {
                     animation: wiggle 0.5s forwards;
+                }
+            }
+        }
+        .skills-scroll-wrapper {
+            max-width: 55vw;
+            max-height: 230px;
+            overflow: hidden;
+            position: relative;
+
+            &:hover .skills-track {
+                animation-play-state: paused;
+            }
+        }
+        @media (min-width: 2400px) {
+            .skills-scroll-wrapper {
+                max-width: 65vw;
+            }
+        }
+        .skills-track {
+            display: flex;
+            width: fit-content;
+            animation: scroll-left 40s linear infinite;
+        }
+        .skills-grid {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(2, auto);
+            gap: 10px;
+            margin-left: 10px;
+        }
+        .skill-item {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: block;
+                transition: 0.3s ease-in-out;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 86%;
+                height: 86%;
+                border-radius: 5%;
+                background-color: rgba(14, 16, 61, 0);
+                transition: background-color 0.3s ease-in-out;
+                z-index: 1;
+                transform: translate(-50%, -50%);
+            }
+            p {
+                font-family: "Space Grotesk", sans-serif;
+                color: $white;
+                font-size: 15px;
+                line-height: 1.4;
+                text-align: center;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+                pointer-events: none;
+            }
+            &:hover {
+                &::after {
+                    background-color: rgba(14, 16, 61, 0.8);
+                }
+                p {
+                    opacity: 1;
                 }
             }
         }
