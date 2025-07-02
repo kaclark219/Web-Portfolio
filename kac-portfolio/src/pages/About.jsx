@@ -42,6 +42,7 @@ import svelte from "../assets/svelte.PNG";
 import type_script from "../assets/type-script.PNG";
 import unity from "../assets/unity.PNG";
 import vercel from "../assets/vercel.PNG";
+import icon_focus from "../assets/icon-focus.PNG";
 
 import "../style/style.css";
 
@@ -141,7 +142,8 @@ function About() {
                             <div className="skills-grid">
                                 {skills.map((skill, index) => (
                                     <div className="skill-item" key={`a-${index}`}>
-                                        <img src={skill.src} alt={`${skill.label} logo`} />
+                                        <img src={skill.src} alt={`${skill.label} logo`} className="base-icon" />
+                                        <img src={icon_focus} alt="focus overlay" className="focus-overlay" />
                                         <p>{skill.label}</p>
                                     </div>
                                 ))}
@@ -149,7 +151,8 @@ function About() {
                             <div className="skills-grid second">
                                 {skills.map((skill, index) => (
                                     <div className="skill-item" key={`b-${index}`}>
-                                        <img src={skill.src} alt={`${skill.label} logo`} />
+                                        <img src={skill.src} alt={`${skill.label} logo`} className="base-icon" />
+                                        <img src={icon_focus} alt="focus overlay" className="focus-overlay" />
                                         <p>{skill.label}</p>
                                     </div>
                                 ))}
