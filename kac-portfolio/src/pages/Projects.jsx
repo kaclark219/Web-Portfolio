@@ -1,7 +1,7 @@
 function Projects() {
     return (
         <div>
-            <h1>Welcome to My Portfolio</h1>
+            <h1>Projects</h1>
             <p>This is my projects page content!</p>
         </div>
     );
