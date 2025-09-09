@@ -603,4 +603,18 @@ body {
 }
 .about-me .about-bottom .skill-item:hover p {
   opacity: 1;
+}
+
+.footer {
+  text-align: center;
+  color: #cbcfda;
+  padding: 1rem;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: absolute;
+  bottom: 1vh;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

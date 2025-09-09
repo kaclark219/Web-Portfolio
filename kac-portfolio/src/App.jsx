@@ -19,6 +19,13 @@ import Games from './pages/Games';
 
 
 function App() {
+
+  const last_updated = new Date().toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   return (
     <BrowserRouter>
       <nav className="navbar">
@@ -63,6 +70,12 @@ function App() {
         <Route path="/design" element={<Art />} />
         <Route path="/games" element={<Games />} />
       </Routes>
+
+      <footer className="footer">
+        <p>© 2025 Katelyn A. Clark</p>
+        <p><a href="mailto:kaclark219@gmail.com">kaclark219@gmail.com</a></p>
+        <p>Last updated: {last_updated}</p>
+      </footer>
     </BrowserRouter>
   );
 }
