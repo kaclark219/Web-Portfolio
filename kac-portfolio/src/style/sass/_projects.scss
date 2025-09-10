@@ -35,6 +35,14 @@
     display: block;
 }
 
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
 .project-dates {
     position: absolute;
     top: 1vh;
@@ -44,6 +52,9 @@
     padding: 0.3rem 0.6rem;
     font-size: 0.8rem;
     border-radius: 5px;
+    &:hover, &:focus {
+        animation: wiggle 0.5s forwards;
+    }
 }
 
 .project-card h3 {
@@ -66,14 +77,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-}
-
-@keyframes wiggle {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(3deg); }
-    50% { transform: rotate(-3deg); }
-    75% { transform: rotate(3deg); }
-    100% { transform: rotate(0deg); }
 }
 
 .tag {
