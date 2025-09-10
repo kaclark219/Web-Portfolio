@@ -661,6 +661,23 @@ a:hover, a:focus {
   display: block;
 }
 
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .project-dates {
   position: absolute;
   top: 1vh;
@@ -670,6 +687,9 @@ a:hover, a:focus {
   padding: 0.3rem 0.6rem;
   font-size: 0.8rem;
   border-radius: 5px;
+}
+.project-dates:hover, .project-dates:focus {
+  animation: wiggle 0.5s forwards;
 }
 
 .project-card h3 {
@@ -700,6 +720,9 @@ a:hover, a:focus {
   border-radius: 5px;
   font-size: 0.8rem;
   font-family: "VT323", monospace;
+}
+.tag:hover, .tag:focus {
+  animation: wiggle 0.5s forwards;
 }
 
 .tag.pink {
