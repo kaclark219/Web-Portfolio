@@ -4,6 +4,7 @@ import possystem from "../assets/pos-system.png"
 import mimc from "../assets/mimc.png"
 import spotifyviz from "../assets/spotify-viz.png"
 import rr from "../assets/rr.png"
+import autoviz from "../assets/m-study.png"
 
 function Projects() {
     const projects = [
@@ -41,6 +42,22 @@ function Projects() {
             { name: "Web Audio API", color: "blue" }
         ],
         link: "https://github.com/kaclark219/Spotify-Music-Visualizer"
+    },
+    {
+        image: autoviz,
+        dates: "Sept.-Dec. 2024",
+        title: "AUTOVIZ",
+        description: "Part of a larger research project, AUTOVIZ is an AI-powered data visualization tool that automatically generates insightful visualizations from raw datasets and user input contextualization. I co-authored the connected research paper comparing AUTOVIZ to other tools and highlighting its adaptability for non-technical users.",
+        tags: [
+            { name: "Python", color: "green" },
+            { name: "OpenAI Assistants API", color: "blue" },
+            { name: "pandas", color: "blue" },
+            { name: "Matplotlib", color: "blue" },
+            { name: "HTML", color: "green" },
+            { name: "Sass", color: "blue" },
+            { name: "JavaScript", color: "green" }
+        ],
+        link: "https://github.com/kaclark219/autoviz"
     },
     {
         image: mimc,
