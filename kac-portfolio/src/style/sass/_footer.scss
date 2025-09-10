@@ -11,3 +11,9 @@
     font-family: "Space Grotesk", sans-serif;
     font-size: 12px;
 }
+
+a {
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+}
