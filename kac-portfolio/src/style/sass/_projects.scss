@@ -68,12 +68,23 @@
     gap: 0.5rem;
 }
 
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
 .tag {
     color: $navy;
     padding: 0.3rem 0.6rem;
     border-radius: 5px;
     font-size: 0.8rem;
     font-family: "VT323", monospace;
+    &:hover, &:focus {
+        animation: wiggle 0.5s forwards;
+    }
 }
 .tag.pink {
     background-color: $pink;
