@@ -606,14 +606,13 @@ body {
 }
 
 .footer {
+  margin-top: auto; /* pushes footer to the bottom */
   text-align: center;
   color: #cbcfda;
   padding: 1rem;
   display: flex;
   gap: 20px;
   justify-content: center;
-  position: absolute;
-  bottom: 1vh;
   width: 100%;
   font-family: "Space Grotesk", sans-serif;
   font-size: 12px;

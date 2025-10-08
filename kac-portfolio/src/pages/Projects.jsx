@@ -5,12 +5,27 @@ import mimc from "../assets/mimc.png"
 import spotifyviz from "../assets/spotify-viz.png"
 import rr from "../assets/rr.png"
 import autoviz from "../assets/m-study.png"
+import twod from "../assets/2d-demo.png"
 
 function Projects() {
     const projects = [
     {
+        image: twod,
+        dates: "Aug.-Sept. 2025",
+        title: "2D Graphics Pipeline",
+        description: "Using the style of OpenGL conventions, I created a 2D graphics pipeline in Python that can render interpolated triangles, apply transformations and clipping, and render hierarchical models. The pipeline allows users to define \"shader\" variables to be rendered and displayed on a window class.",
+        tags: [
+            { name: "Python", color: "green" },
+            { name: "PyGLM", color: "blue" },
+            { name: "NumPy", color: "blue" },
+            { name: "PyGame", color: "blue" },
+            { name: "Linear Algebra", color: "pink" }
+        ],
+        link: "https://github.com/kaclark219/2d-rasterization-pipeline.git"
+    },
+    {
         image: rr,
-        dates: "Feb-May 2025",
+        dates: "Feb.-May 2025",
         title: "Reader's Recs",
         description: "A social cataloging platform offering personalized book recommendations, user reviews, collection organization, and community features. The built-in ML recommendation algorithm allows users to discover new books based on their reading history and preferences. Reader's Recs achieved 2x higher satisfaction than Goodreads in a user study (5.2 vs. 2.6 out of 7) and the recommendations got a 1.1986 cosine similarity ratio comparing the model's recommendations to actual reading history of 100+ users.",
         tags: [

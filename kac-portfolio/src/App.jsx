@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import name_logo from './assets/logo-name.PNG'
@@ -25,6 +25,10 @@ function App() {
     month: "long",
     day: "numeric",
   });
+
+  useEffect(() => {
+    document.title = "katelyn's portfolio!";
+  }, []);
 
   return (
     <BrowserRouter>
