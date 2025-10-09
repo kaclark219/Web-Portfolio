@@ -20,8 +20,7 @@ body {
     padding-top: 25px;
     padding-left: 60px;
     padding-right: 60px;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 22px;
+    @include sg-font(22px);
     background-color: $white;
     .nav-links {
         display: flex;

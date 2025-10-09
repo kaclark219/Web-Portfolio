@@ -13,7 +13,7 @@ function Projects() {
         image: twod,
         dates: "Aug.-Sept. 2025",
         title: "2D Graphics Pipeline",
-        description: "Using the style of OpenGL conventions, I created a 2D graphics pipeline in Python that can render interpolated triangles, apply transformations and clipping, and render hierarchical models. The pipeline allows users to define \"shader\" variables to be rendered and displayed on a window class.",
+        description: "I built a lightweight 2D graphics pipeline in Python that follows OpenGL conventions end-to-end: vertices flow through model to normalize to view transforms, then hit a rasterizer on CPU. Triangles are filled using a barycentric test with smooth per-pixel color interpolation and Sutherland-Hodgman polygon clipping, plus a scene graph for hierarchical modeling. Everything renders to a Pygame window with “shader-like” vertex attributes that can be extended beyond RGB.",
         tags: [
             { name: "Python", color: "green" },
             { name: "PyGLM", color: "blue" },

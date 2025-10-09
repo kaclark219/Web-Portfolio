@@ -25,11 +25,7 @@ function App() {
     month: "long",
     day: "numeric",
   });
-
-  useEffect(() => {
-    document.title = "katelyn's portfolio!";
-  }, []);
-
+  
   return (
     <BrowserRouter>
       <nav className="navbar">

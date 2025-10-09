@@ -14,15 +14,13 @@
 
 .hero-text {
     h1 {
-        font-family: "VT323", monospace;
+        @include vt-font(96px);
         color: $navy;
-        font-size: 96px;
         margin-bottom: 5px;
     }
     h2 {
-        font-family: "Space Grotesk", sans-serif;
+        @include sg-font(48px);
         color: $green;
-        font-size: 48px;
     }
 }
 
@@ -48,8 +46,7 @@
 .learn-more-btn {
     margin-top: 65px;
     color: $navy;
-    font-family: "VT323", monospace;
-    font-size: 48px;
+    @include vt-font(48px);
     background-color: $white;
     border-radius: 50px;
     border: 3px solid $navy;
@@ -112,7 +109,6 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     cursor: pointer;
-    // transform: rotate(-4.37deg);
     transform-origin: top left;
     &:hover, &:focus {
         animation: play-frames-gameboy 1.3s steps(8) infinite

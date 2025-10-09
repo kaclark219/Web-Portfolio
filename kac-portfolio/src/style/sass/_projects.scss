@@ -1,6 +1,12 @@
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    @include respond(1000) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include respond(500) {
+        grid-template-columns: repeat(1, 1fr);
+    }
     gap: 2rem;
     padding-left: 8vw;
     padding-right: 8vw;
@@ -59,17 +65,15 @@
 
 .project-card h3 {
     margin: 1rem;
-    font-size: 1.5rem;
     color: $white;
-    font-family: "VT323", monospace;
+    @include vt-font(1.5rem);
     text-decoration-color: $white;
 }
 
 .project-card p {
     margin: 0 1rem 1rem;
-    font-size: .95rem;
     color: $white-hover;
-    font-family: "Space Grotesk", sans-serif;
+    @include sg-font(.95rem);
 }
 
 .project-tags {
@@ -83,8 +87,7 @@
     color: $navy;
     padding: 0.3rem 0.6rem;
     border-radius: 5px;
-    font-size: 0.8rem;
-    font-family: "VT323", monospace;
+    @include vt-font(0.8rem);
     &:hover, &:focus {
         animation: wiggle 0.5s forwards;
     }
@@ -97,4 +100,18 @@
 }
 .tag.green {
     background-color: $green;
+}
+
+.project-card.project-link {
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;   /* base */
+}
+.project-card.project-link:hover,
+.project-card.project-link:focus {
+    text-decoration: none;
+}
+.project-card.project-link:hover h3 {
+    text-decoration: underline;
 }

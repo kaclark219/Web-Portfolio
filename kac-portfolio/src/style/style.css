@@ -148,8 +148,8 @@ body {
   padding-top: 25px;
   padding-left: 60px;
   padding-right: 60px;
-  font-family: "Space Grotesk", sans-serif;
   font-size: 22px;
+  font-family: "Space Grotesk", sans-serif;
   background-color: #f5f5f5;
 }
 .navbar .nav-links {
@@ -234,15 +234,15 @@ body {
 }
 
 .hero-text h1 {
+  font-size: 96px;
   font-family: "VT323", monospace;
   color: #0e103d;
-  font-size: 96px;
   margin-bottom: 5px;
 }
 .hero-text h2 {
+  font-size: 48px;
   font-family: "Space Grotesk", sans-serif;
   color: #9caf5e;
-  font-size: 48px;
 }
 
 @keyframes wiggle {
@@ -275,8 +275,8 @@ body {
 .learn-more-btn {
   margin-top: 65px;
   color: #0e103d;
-  font-family: "VT323", monospace;
   font-size: 48px;
+  font-family: "VT323", monospace;
   background-color: #f5f5f5;
   border-radius: 50px;
   border: 3px solid #0e103d;
@@ -453,19 +453,19 @@ body {
   padding-bottom: 0.8vh;
 }
 .about-me h1 {
+  font-size: 48px;
   font-family: "VT323", monospace;
   color: #9caf5e;
-  font-size: 48px;
 }
 .about-me h2 {
+  font-size: 48px;
   font-family: "VT323", monospace;
   color: #69306d;
-  font-size: 48px;
 }
 .about-me p {
+  font-size: 20px;
   font-family: "Space Grotesk", sans-serif;
   color: #0e103d;
-  font-size: 20px;
   margin-top: 20px;
   line-height: 1.6;
 }
@@ -576,9 +576,9 @@ body {
   transform: translate(-50%, -50%);
 }
 .about-me .about-bottom .skill-item p {
+  font-size: 14px;
   font-family: "Space Grotesk", sans-serif;
   color: #0e103d;
-  font-size: 14px;
   line-height: 1.1;
   letter-spacing: -0.5px;
   font-weight: 550;
@@ -614,8 +614,8 @@ body {
   gap: 20px;
   justify-content: center;
   width: 100%;
-  font-family: "Space Grotesk", sans-serif;
   font-size: 12px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 a:hover, a:focus {
@@ -630,6 +630,16 @@ a:hover, a:focus {
   padding-right: 8vw;
   padding-top: 0.3vh;
   padding-bottom: 0.8vh;
+}
+@media (max-width: 1000px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .project-card {
@@ -693,16 +703,16 @@ a:hover, a:focus {
 
 .project-card h3 {
   margin: 1rem;
-  font-size: 1.5rem;
   color: #f5f5f5;
+  font-size: 1.5rem;
   font-family: "VT323", monospace;
   text-decoration-color: #f5f5f5;
 }
 
 .project-card p {
   margin: 0 1rem 1rem;
-  font-size: 0.95rem;
   color: #cbcfda;
+  font-size: 0.95rem;
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -734,4 +744,20 @@ a:hover, a:focus {
 
 .tag.green {
   background-color: #9caf5e;
+}
+
+.project-card.project-link {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none; /* base */
+}
+
+.project-card.project-link:hover,
+.project-card.project-link:focus {
+  text-decoration: none;
+}
+
+.project-card.project-link:hover h3 {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
