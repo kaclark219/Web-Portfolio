@@ -760,4 +760,172 @@ a:hover, a:focus {
 
 .project-card.project-link:hover h3 {
   text-decoration: underline;
+}
+
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-top: 0.3vh;
+  padding-bottom: 0.8vh;
+}
+@media (max-width: 800px) {
+  .art-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.design-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "meta gallery";
+  align-items: stretch;
+  background: #0e103d;
+  border: 2px solid #50526a;
+  border-radius: 8px;
+  color: #f5f5f5;
+  box-shadow: 0 4px 5px rgba(14, 16, 61, 0.2117647059);
+  overflow: hidden;
+  text-decoration: none;
+}
+.design-card.design-link:hover, .design-card.design-link:focus {
+  text-decoration: none;
+}
+
+.design-meta {
+  grid-area: meta;
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.design-gallery {
+  grid-area: gallery;
+  position: relative;
+  display: grid;
+  gap: 8px;
+  padding: 8px;
+  height: 100%;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 110px;
+}
+.design-gallery .tile {
+  border-radius: 6px;
+  overflow: hidden;
+  background: #1b1e4a;
+}
+.design-gallery .tile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: transform 0.25s ease;
+}
+.design-gallery .tile:hover img {
+  transform: scale(1.04);
+}
+.design-gallery .year-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #69306d;
+  color: #f5f5f5;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  z-index: 2;
+}
+.design-gallery .more-overlay {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #f5f5f5;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.design-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.35rem;
+  font-family: "VT323", monospace;
+  color: #f5f5f5;
+}
+
+.made-with {
+  margin: 0 0 0.5rem 0;
+  color: #cbcfda;
+  font-size: 0.95rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+.made-with strong {
+  color: #f5f5f5;
+}
+
+.design-section h4 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 0.95rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: #cbcfda;
+}
+.design-section p {
+  font-size: 0.95rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: #cbcfda;
+}
+.design-section .process-list {
+  margin-left: 1.2rem;
+  font-size: 0.95rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: #cbcfda;
+}
+.design-section .process-list li {
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 900px) {
+  .design-card {
+    grid-template-columns: 1fr;
+    grid-template-areas: "gallery" "meta";
+  }
+  .design-gallery {
+    grid-auto-rows: 100px;
+  }
+}
+@media (max-width: 700px) {
+  .design-gallery {
+    grid-auto-rows: 90px;
+  }
+}
+@media (max-width: 480px) {
+  .design-gallery {
+    grid-auto-rows: 80px;
+  }
+}
+.design-card {
+  max-height: 60vh;
+  height: min(60vh, -moz-max-content);
+  height: min(60vh, max-content);
+}
+@supports (height: 1svh) {
+  .design-card {
+    max-height: 60svh;
+    height: min(60svh, -moz-max-content);
+    height: min(60svh, max-content);
+  }
+}
+
+.design-meta, .design-gallery {
+  min-height: 0;
+}
+
+.design-gallery {
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

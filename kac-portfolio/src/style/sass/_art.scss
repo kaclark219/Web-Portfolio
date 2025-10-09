@@ -1,0 +1,160 @@
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include respond(800) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    gap: 2rem;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: .3vh;
+    padding-bottom: .8vh;
+}
+
+.design-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "meta gallery";
+    align-items: stretch;
+    background: $navy;
+    border: 2px solid #50526a;
+    border-radius: 8px;
+    color: $white;
+    box-shadow: 0 4px 5px #0e103d36;
+    overflow: hidden;
+    text-decoration: none;
+
+    &.design-link:hover, &.design-link:focus {
+        text-decoration: none;
+    }
+}
+
+.design-meta {
+    grid-area: meta;
+    padding: .9rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.design-gallery {
+    grid-area: gallery;
+    position: relative;
+    display: grid;
+    gap: 8px;
+    padding: 8px;
+
+    height: 100%;
+    grid-auto-flow: dense;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 110px;
+
+    .tile {
+        border-radius: 6px;
+        overflow: hidden;
+        background: #1b1e4a;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transform: scale(1);
+            transition: transform .25s ease;
+        }
+        &:hover img {
+            transform: scale(1.04);
+        }
+    }
+
+    .year-badge {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: $purple;
+        color: $white;
+        padding: 0.3rem 0.6rem;
+        border-radius: 999px;
+        font-size: .8rem;
+        z-index: 2;
+    }
+
+    .more-overlay {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        background: rgba(0,0,0,.55);
+        color: $white;
+        padding: 0.25rem 0.6rem;
+        border-radius: 999px;
+        font-size: .85rem;
+    }
+}
+
+.design-title {
+    margin: 0 0 .25rem 0;
+    @include vt-font(1.35rem);
+    color: $white;
+}
+.made-with {
+    margin: 0 0 .5rem 0;
+    color: $white-hover;
+    @include sg-font(.95rem);
+    strong { color: $white; }
+}
+.design-section {
+    h4 {
+        margin: .5rem 0 .25rem;
+        @include sg-font(.95rem);
+        color: $white-hover;
+    }
+    p  {
+        @include sg-font(.95rem);
+        color: $white-hover;
+    }
+    .process-list {
+        margin-left: 1.2rem;
+        @include sg-font(.95rem);
+        color: $white-hover;
+        li {
+            margin-bottom: .25rem;
+        }
+    }
+}
+
+@include respond(900) {
+    .design-card {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "gallery"
+            "meta";
+    }
+    .design-gallery {
+        grid-auto-rows: 100px;
+    }
+}
+@include respond(700) {
+    .design-gallery {
+        grid-auto-rows: 90px;
+    }
+}
+@include respond(480) {
+    .design-gallery {
+        grid-auto-rows: 80px;
+    }
+}
+
+.design-card {
+    max-height: 60vh;
+    height: min(60vh, max-content);
+    @supports (height: 1svh) {
+        max-height: 60svh;
+        height: min(60svh, max-content);
+    }
+}
+.design-meta, .design-gallery {
+    min-height: 0;
+}
+.design-gallery {
+    height: 100%;
+}
