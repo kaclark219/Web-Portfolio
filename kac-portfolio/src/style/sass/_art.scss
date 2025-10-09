@@ -67,6 +67,14 @@
         }
     }
 
+    @keyframes wiggle {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(3deg); }
+        50% { transform: rotate(-3deg); }
+        75% { transform: rotate(3deg); }
+        100% { transform: rotate(0deg); }
+    }
+
     .year-badge {
         position: absolute;
         top: 12px;
@@ -77,6 +85,9 @@
         border-radius: 999px;
         font-size: .8rem;
         z-index: 2;
+        &:hover, &:focus {
+            animation: wiggle 0.5s forwards;
+        }
     }
 
     .more-overlay {
@@ -157,4 +168,21 @@
 }
 .design-gallery {
     height: 100%;
+}
+
+.design-card.design-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.design-card.design-link:hover, .design-card.design-link:focus, .design-card.design-link:focus-visible {
+    text-decoration: none;
+    outline: none;
+}
+
+.design-card.design-link:hover .design-title, .design-card.design-link:focus-visible .design-title {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1.5px;
 }
