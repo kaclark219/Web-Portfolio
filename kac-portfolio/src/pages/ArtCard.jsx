@@ -4,6 +4,7 @@ function ArtCard({
     images = [],
     title,
     year,
+    tools = [],
     madeWith,
     inspiration,
     process,
@@ -42,10 +43,28 @@ function ArtCard({
             <div className="design-meta">
                 <h3 className="design-title">{title}</h3>
 
-                {madeWith && (
-                    <p className="made-with">
-                        <strong>Made with:</strong> {madeWith}
-                    </p>
+                {tools?.length > 0 ? (
+                    <ul className="tool-icons" aria-label="Tools used">
+                        {tools.map((t, i) => {
+                            const src = typeof t === "string" ? t : t.src;
+                            const label = typeof t === "string" ? "" : (t.label || t.alt || "");
+                            const key = (typeof t === "string" ? t : (t.kind || label || ""))
+                                .toLowerCase().replace(/[^a-z0-9]+/g, "-");
+                            const toolClass = key ? `tool-${key}` : "";
+
+                            return (
+                                <li key={i} className={`tool-icon ${toolClass}`} title={label}>
+                                    <img src={src} alt={label} loading="lazy" />
+                                </li>
+                            );
+                        })}
+                    </ul>
+                ) : (
+                    madeWith && (
+                        <p className="made-with">
+                            <strong>Made with:</strong> {madeWith}
+                        </p>
+                    )
                 )}
 
                 {inspiration && (

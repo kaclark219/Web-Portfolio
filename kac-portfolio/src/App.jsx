@@ -20,11 +20,20 @@ import Games from './pages/Games';
 
 function App() {
 
-  const last_updated = new Date().toLocaleDateString("en-US", {
+  const buildIso = typeof __BUILD_TIME__ !== "undefined" ? __BUILD_TIME__ : new Date().toISOString();
+
+  const lastUpdatedET = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
     year: "numeric",
     month: "long",
     day: "numeric",
-  });
+    hour: "numeric",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true,
+    timeZoneName: "short",
+  }).format(new Date(buildIso));
+
   
   return (
     <BrowserRouter>
@@ -74,7 +83,7 @@ function App() {
       <footer className="footer">
         <p>© 2025 Katelyn A. Clark</p>
         <p><a href="mailto:kaclark219@gmail.com">kaclark219@gmail.com</a></p>
-        <p>Last updated: {last_updated}</p>
+        <p>Last updated: {lastUpdatedET}</p>
       </footer>
     </BrowserRouter>
   );
