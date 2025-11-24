@@ -35,7 +35,7 @@ function Home() {
                 </div>
             </div>
             <div className="learn-more-btn">
-                <Link to="/about" className="btn">Learn More <ArrowRight size={32} color="#0e103d" /></Link>
+                <Link to="/about">Learn More <ArrowRight size={32} color="#0e103d" /></Link>
             </div>
             <div className="image-links">
                 <div className="ds">
