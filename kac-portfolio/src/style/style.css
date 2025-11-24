@@ -1329,7 +1329,6 @@ a:hover, a:focus {
   transition: transform 0.15s ease, background 0.15s ease;
 }
 .btn:hover, .btn:focus {
-  animation: wiggle 0.5s forwards;
   background: rgba(255, 255, 255, 0.06);
 }
 
