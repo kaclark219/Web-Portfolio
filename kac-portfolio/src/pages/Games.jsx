@@ -67,7 +67,7 @@ function Games() {
             dates: "Feb. 2024",
             title: "Hanging On",
             status: "Game Jam, Demo",
-            pitch: "A choose-you-own-adventure narrative survival game.",
+            pitch: "A choose-your-own-adventure narrative survival game.",
             description: "Made for Chillennium 2024. \"Hanging On\" gives players a chance to decide what their priorities are .. even if they don't realize it. The purpose of this game isn't to win necessarily, but rather to decide how you can balance hanging on to both your life and sense of humanity. This demo represents the first day of gameplay, with shortened progress bars to match.",
             role: "Solo Developer",
             engine: "Java, Java Swing",
