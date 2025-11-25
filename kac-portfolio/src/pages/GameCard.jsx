@@ -138,7 +138,7 @@ function GameCard({
             </a>
             )}
             {repo && (
-            <a href={repo} target="_blank" rel="noopener noreferrer" className="btn ghost">
+            <a href={repo} target="_blank" rel="noopener noreferrer" className="btn">
                 View Code
             </a>
             )}

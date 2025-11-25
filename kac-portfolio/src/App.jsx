@@ -82,7 +82,7 @@ function App() {
 
       <footer className="footer">
         <p>© 2025 Katelyn A. Clark</p>
-        <p><a href="mailto:kaclark219@gmail.com">kaclark219@gmail.com</a></p>
+        <p>kaclark219 AT gmail DOT com</p>
         <p>Last updated: {lastUpdatedET}</p>
       </footer>
     </BrowserRouter>

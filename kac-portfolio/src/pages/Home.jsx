@@ -18,8 +18,8 @@ function Home() {
                             words={[
                                 "i'm a web developer ",
                                 "i like making games ",
-                                "i'm a cs grad student ",
-                                "i design fun graphics ",
+                                "i study graphics ",
+                                "i design for the future ",
                             ]}
                             loop={true}
                             cursor
