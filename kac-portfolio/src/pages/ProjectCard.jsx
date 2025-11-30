@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-function ProjectCard({ image, dates, title, description, tags, link }) {
+function ProjectCard({ image, img_align, dates, title, description, tags, link }) {
     return (
         <motion.a
             href={link}
@@ -10,7 +10,7 @@ function ProjectCard({ image, dates, title, description, tags, link }) {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
         >
-        <div className="project-image">
+        <div className={`project-image ${img_align}`}>
             <img src={image} alt={title} />
             <span className="project-dates">{dates}</span>
         </div>

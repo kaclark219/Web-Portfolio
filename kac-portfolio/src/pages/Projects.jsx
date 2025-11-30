@@ -6,11 +6,14 @@ import spotifyviz from "../assets/spotify-viz.png"
 import rr from "../assets/rr.png"
 import autoviz from "../assets/m-study.png"
 import twod from "../assets/2d-demo.png"
+import twod_ex from "../assets/2d-pipeline-example.png"
+import irises from "../assets/irises.png"
 
 function Projects() {
     const projects = [
     {
-        image: twod,
+        image: irises,
+        img_align: "top15",
         dates: "Aug.-Sept. 2025",
         title: "2D Graphics Pipeline",
         description: "I built a lightweight 2D graphics pipeline in Python that follows OpenGL conventions end-to-end: vertices flow through model to normalize to view transforms, then hit a rasterizer on CPU. Triangles are filled using a barycentric test with smooth per-pixel color interpolation and Sutherland-Hodgman polygon clipping, plus a scene graph for hierarchical modeling. Everything renders to a Pygame window with “shader-like” vertex attributes that can be extended beyond RGB.",
@@ -76,6 +79,7 @@ function Projects() {
     },
     {
         image: mimc,
+        img_align: "top",
         dates: "Nov. 2024",
         title: "Make It Make Cents",
         description: "Created for Capital One's Challenge at TAMU Datathon 2024, this project was developed as a solution to low financial literacy skills in children and young teens. I designed and programmed this project alone, and won \"Best Domain\" from Major League Hacking for my submission.",
@@ -92,6 +96,7 @@ function Projects() {
     },
     {
         image: possystem,
+        img_align: "top",
         dates: "March-May 2024",
         title: "Fast Food POS Web Application",
         description: "A web application developed in an Agile team to allow authenticated users to view the menu, place orders, view/complete kitchen tickets, edit menu items/ingredients, and view monetary reports; includes integration of multiple APIs for user accessibility such as multilingual translation, built-in zoom features, etc..",

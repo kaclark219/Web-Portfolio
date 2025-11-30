@@ -29,7 +29,7 @@ function Games() {
             engine: "Unity (C#)",
             platforms: ["PC"],
             media: {trailer: "https://www.youtube.com/watch?v=U7xINoVDyug", play: "https://kaclark219.itch.io/dahlia-fields"},
-            screenshots: [dahlia_dialogue, dahlia_house_interior, dahlia_planting, dahlia_post_office],
+            screenshots: [dahlia_dialogue, dahlia_house_interior, dahlia_post_office, dahlia_planting],
             tags: [
                 { name: "Unity", color: "blue" },
                 { name: "C#", color: "green" },

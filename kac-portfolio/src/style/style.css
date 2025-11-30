@@ -670,6 +670,16 @@ a:hover, a:focus {
   display: block;
 }
 
+.project-image.top img {
+  -o-object-position: top;
+     object-position: top;
+}
+
+.project-image.top15 img {
+  -o-object-position: 0 15%;
+     object-position: 0 15%;
+}
+
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
