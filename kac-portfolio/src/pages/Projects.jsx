@@ -8,9 +8,29 @@ import autoviz from "../assets/m-study.png"
 import twod from "../assets/2d-demo.png"
 import twod_ex from "../assets/2d-pipeline-example.png"
 import irises from "../assets/irises.png"
+import cnn_examples from "../assets/cnn-examples.png"
 
 function Projects() {
     const projects = [
+    {
+        image: cnn_examples,
+        dates: "Sept.-Nov. 2025",
+        title: "Art Style Classification with CNNs & Classical ML",
+        description: "Built and evaluated an art style classifier for famous paintings using both classical models (k-NN, decision tree forest, SVM) and a CNN with EfficientNetB0 transfer learning, achieving >84% testing accuracy across five categories. Created custom scripts to process & split images, then designed experiments comparing scikit-learn baselines to a TensorFlow pipeline, analyzing confusion matrices and feature maps to understand where models succeed and fail across styles.",
+        tags: [
+            { name: "Jupyter Notebook", color: "green" },
+            { name: "Scikit-learn", color: "blue" },
+            { name: "Scikit-image", color: "blue" },
+            { name: "TensorFlow", color: "blue" },
+            { name: "Python", color: "green" },
+            { name: "Pandas", color: "blue" },
+            { name: "NumPy", color: "blue" },
+            { name: "Matplotlib", color: "blue" },
+            { name: "Computer Vision", color: "pink" },
+            { name: "Machine Learning", color: "pink" }
+        ],
+        link: "https://github.com/kaclark219/CSCI-635-01-Group-2",
+    },
     {
         image: irises,
         img_align: "top15",
@@ -69,7 +89,7 @@ function Projects() {
         tags: [
             { name: "Python", color: "green" },
             { name: "OpenAI Assistants API", color: "blue" },
-            { name: "pandas", color: "blue" },
+            { name: "Pandas", color: "blue" },
             { name: "Matplotlib", color: "blue" },
             { name: "HTML", color: "green" },
             { name: "Sass", color: "blue" },
