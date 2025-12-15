@@ -9,9 +9,25 @@ import twod from "../assets/2d-demo.png"
 import twod_ex from "../assets/2d-pipeline-example.png"
 import irises from "../assets/irises.png"
 import cnn_examples from "../assets/cnn-examples.png"
+import threed from "../assets/3d-pipeline-demo.png"
+import { image } from "framer-motion/client";
 
 function Projects() {
     const projects = [
+    {
+        image: threed,
+        dates: "Sept.-Dec. 2025",
+        title: "3D Graphics Pipeline",
+        description: "Developed a complete 3D graphics pipeline in Python that adheres to OpenGL conventions, with buffers, shader code, and a single rendering call that uses them in different contexts for flexibility. Shading systems include Phong, Gouraud, Gooch, image texture mapping, and procedural texture generation.",
+        tags: [
+            { name: "Python", color: "green" },
+            { name: "PyGLM", color: "blue" },
+            { name: "NumPy", color: "blue" },
+            { name: "PyGame", color: "blue" },
+            { name: "Linear Algebra", color: "pink" }
+        ],
+        link: "https://github.com/kaclark219/3d-rasterization-pipeline",
+    },
     {
         image: cnn_examples,
         dates: "Sept.-Nov. 2025",
@@ -44,7 +60,7 @@ function Projects() {
             { name: "PyGame", color: "blue" },
             { name: "Linear Algebra", color: "pink" }
         ],
-        link: "https://github.com/kaclark219/2d-rasterization-pipeline.git"
+        link: "https://github.com/kaclark219/2d-rasterization-pipeline"
     },
     {
         image: rr,
