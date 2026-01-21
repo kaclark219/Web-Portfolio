@@ -1367,7 +1367,7 @@ a:hover, a:focus {
   min-height: 100%;
   padding: clamp(20px, 4vw, 48px);
   color: var(--text);
-  background: radial-gradient(900px 450px at 10% 0%, rgba(109, 40, 217, 0.1), transparent 60%), radial-gradient(900px 450px at 90% 12%, rgba(8, 178, 34, 0.1), transparent 65%), linear-gradient(180deg, #ffffff, var(--bg));
+  background: radial-gradient(900px 450px at 10% 0%, rgba(217, 146, 40, 0.1), transparent 60%), radial-gradient(900px 450px at 90% 12%, rgba(8, 178, 34, 0.1), transparent 65%), linear-gradient(180deg, #ffffff, var(--bg));
   font-family: "Times New Roman", serif;
 }
 
