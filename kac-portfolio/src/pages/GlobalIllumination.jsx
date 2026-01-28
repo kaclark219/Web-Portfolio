@@ -50,6 +50,28 @@ const SECTIONS = [
             },
         ],
     },
+    {
+        id: "assignment-02",
+        title: "Assignment 2: Ray Tracing Framework",
+        date: "January 28, 2026",
+        description: "Implemented a basic ray tracer in C++ to render the scene with spheres and a plane to PPM format.",
+        blocks: [
+            {
+                type: "render",
+                title: "PPM Rendering",
+                src: "/renders/basic-raytrace-output.png",
+                alt: "Submission 2 render",
+                caption: "PNG version of PPM output file.",
+            },
+            {
+                type: "links",
+                title: "Extras",
+                items: [
+                    { label: "GitHub Repository", href: "https://github.com/kaclark219/Web-Portfolio" },
+                ],
+            },
+        ]
+    }
 ];
 
 function Block({ block, sectionId }) {
