@@ -54,7 +54,7 @@ const SECTIONS = [
         id: "assignment-02",
         title: "Assignment 2: Ray Tracing Framework",
         date: "January 28, 2026",
-        description: "Implemented a basic ray tracer in C++ to render the scene with spheres and a plane to PPM format.",
+        description: "Implemented a basic ray tracer in C++ (and CUDA) to render the scene with spheres and a plane to PPM format on either CPU or GPU.",
         blocks: [
             {
                 type: "render",
@@ -67,7 +67,7 @@ const SECTIONS = [
                 type: "links",
                 title: "Extras",
                 items: [
-                    { label: "GitHub Repository", href: "https://github.com/kaclark219/Web-Portfolio" },
+                    { label: "GitHub Repository", href: "https://github.com/kaclark219/ray-tracer.git" },
                 ],
             },
         ]
