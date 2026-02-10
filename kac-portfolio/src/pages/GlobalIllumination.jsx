@@ -3,7 +3,7 @@ import React from "react";
 const SECTIONS = [
     {
         id: "assignment-01",
-        title: "Assignment 1: Setting the Scene",
+        title: "BASIC Assignment 1: Setting the Scene",
         date: "January 17, 2026",
         description: "Used Godot to create a 3D scene to simulate the target image, then created a script to grab specifications from the objects.",
         blocks: [
@@ -52,7 +52,7 @@ const SECTIONS = [
     },
     {
         id: "assignment-02",
-        title: "Assignment 2: Ray Tracing Framework",
+        title: "BASIC Assignment 2: Ray Tracing Framework",
         date: "January 28, 2026",
         description: "Implemented a basic ray tracer in C++ (and CUDA) to render the scene with spheres and a plane to PPM format on either CPU or GPU.",
         blocks: [
@@ -69,6 +69,35 @@ const SECTIONS = [
                 items: [
                     { label: "GitHub Repository", href: "https://github.com/kaclark219/ray-tracer.git" },
                 ],
+            },
+        ]
+    },
+    {
+        id: "assignment-03",
+        title: "BASIC Assignment 3: Shading",
+        date: "February 11, 2026",
+        description: "Added Phong shading to the ray tracer, including ambient, diffuse, and specular components. Also completed extra credit features of supersampling & support for multiple light sources.",
+        blocks: [
+            {
+                type: "render",
+                title: "Shading Render",
+                src: "/renders/shading_output_img.png",
+                alt: "Submission 3 render",
+                caption: "Render with Phong shading, showing diffuse and specular highlights.",
+            },
+            {
+                type: "render",
+                title: "Supersampling Render",
+                src: "/renders/supersampling_output_img.png",
+                alt: "Submission 3 EC render",
+                caption: "Supersampling render on CPU.",
+            },
+            {
+                type: "render",
+                title: "Multiple Light Source Render",
+                src: "/renders/multi-light_output_img_gpu.png",
+                alt: "Submission 3 EC render",
+                caption: "Two point light sources, rendered on GPU without supersampling.",
             },
         ]
     }
