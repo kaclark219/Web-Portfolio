@@ -27,6 +27,8 @@ import type_inside from "../assets/type-inside.jpg"
 import type_outside from "../assets/type-outside.jpg"
 import type_stacked from "../assets/type-stacked.jpg"
 
+// wichacks website screenshots/assets
+
 function Art() {
     const designs = [
     {

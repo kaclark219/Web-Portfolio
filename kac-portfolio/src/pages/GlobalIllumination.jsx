@@ -100,6 +100,42 @@ const SECTIONS = [
                 caption: "Two point light sources, rendered on GPU without supersampling.",
             },
         ]
+    },
+    {
+        id: "assignment-04",
+        title: "BASIC Assignment 4: Procedural Textures",
+        date: "February 25, 2026",
+        description: "Added procedural checkerboard pattern to the floor plane. Implemented the extra credit features of texturing a sphere, a procedural Perlin noise texture, and a noise-based tile discoloration option.",
+        blocks: [
+            {
+                type: "render",
+                title: "Procedural Checkerboard Render",
+                src: "/renders/procedural-checkerboard_output_img.png",
+                alt: "Submission 4 render",
+                caption: "Render with procedural checkerboard pattern.",
+            },
+            {
+                type: "render",
+                title: "Procedural Checkerboard on Sphere Render",
+                src: "/renders/procedural-checkerboard-sphere_output_img.png",
+                alt: "Submission 4 EC render",
+                caption: "Procedural checkerboard texture on a sphere.",
+            },
+            {
+                type: "render",
+                title: "Perlin Noise Procedural Texture Render",
+                src: "/renders/perlin-noise_output_img.png",
+                alt: "Submission 4 EC render",
+                caption: "Perlin noise procedural texture.",
+            },
+            {
+                type: "render",
+                title: "Noise-based Tile Discoloration Render",
+                src: "/renders/noise-discoloration_output_img.png",
+                alt: "Submission 4 EC render",
+                caption: "Noise-based tile discoloration on the floor plane.",
+            }
+        ]
     }
 ];
 
