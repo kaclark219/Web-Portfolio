@@ -29,13 +29,13 @@ function Home() {
                             delaySpeed={1500}
                         />
                     </h2>
+                    <div className="learn-more-btn">
+                        <Link to="/about">Learn More <ArrowRight size={32} className="arrow-icon" color="#0e103d" /></Link>
+                    </div>
                 </div>
                 <div className="hero-image">
                     <img src={little_me} alt="pixel illustration of me" />
                 </div>
-            </div>
-            <div className="learn-more-btn">
-                <Link to="/about">Learn More <ArrowRight size={32} color="#0e103d" /></Link>
             </div>
             <div className="image-links">
                 <div className="ds">

@@ -49,6 +49,10 @@ body {
                     padding-top: 20px;
                     padding-left: 20px;
                 }
+                @include respond(640) {
+                    padding-top: 0px;
+                    padding-left: 0px;
+                }
             }
             .logo-star {
                 position: absolute;
@@ -63,6 +67,10 @@ body {
                 @include respond(1024) {
                     padding-top: 20px;
                     padding-left: 20px;
+                }
+                @include respond(640) {
+                    padding-top: 10px;
+                    padding-right: 10px;
                 }
             }
         }
@@ -99,6 +107,10 @@ body {
                     color: $navy-hover;
                 }
             }
+        }
+        @include respond(640) {
+            padding-top: 10px;
+            padding-right: 10px;
         }
     }
     

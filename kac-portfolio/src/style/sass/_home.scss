@@ -3,6 +3,18 @@
     padding-right: 120px;
     padding-top: 80px;
     padding-bottom: 80px;
+    @include respond(1024) {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @include respond(640) {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 .hero {
@@ -10,6 +22,13 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 35px;
+    @include respond(1024) {
+        gap: 25px;
+    }
+    @include respond(640) {
+        gap: 15px;
+        align-items: flex-end;
+    }
 }
 
 .hero-text {
@@ -17,10 +36,27 @@
         @include vt-font(96px);
         color: $navy;
         margin-bottom: 5px;
+        @include respond(1024) {
+            font-size: 64px;
+        }
+        @include respond(640) {
+            font-size: 40px;
+            white-space: nowrap;
+        }
     }
     h2 {
         @include sg-font(48px);
         color: $green;
+        @include respond(1024) {
+            font-size: 32px;
+        }
+        @include respond(640) {
+            font-size: 20px;
+        }
+    }
+    @include respond(640) {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -37,6 +73,14 @@
         height: auto;
         margin-top: -40px;
         transition: transform 0.2s ease-in-out;
+        @include respond(1024) {
+            width: 120px;
+            margin-top: -30px;
+        }
+        @include respond(640) {
+            width: 140px;
+            margin-top: 0;
+        }
         &:hover, &:focus {
             animation: wiggle 0.5s forwards;
         }
@@ -56,6 +100,23 @@
     gap: 10px;
     width: fit-content;
     transition: background-color 0.3s ease;
+    @include respond(1024) {
+        margin-top: 40px;
+        font-size: 32px;
+        padding: 8px 40px;
+    }
+    @include respond(640) {
+        margin-top: 20px;
+        font-size: 24px;
+        padding: 8px 30px;
+        gap: 5px;
+    }
+    .arrow-icon {
+        @include respond(640) {
+            width: 20px;
+            height: 20px;
+        }
+    }
     &:hover, &:focus {
         background-color: $white-hover;
     }
@@ -64,6 +125,9 @@
 .image-links {
     position: relative;
     height: 350px;
+    @include respond(1024) {
+        display: none;
+    }
     .ds {
         position: absolute;
         right: 9vw;
