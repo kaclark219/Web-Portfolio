@@ -21,6 +21,8 @@ import {
   ArrowRight,
   GameController,
   LinkedinLogo,
+  List,
+  X,
 } from "phosphor-react";
 
 import Home from "./pages/Home";
@@ -32,6 +34,7 @@ import GlobalIllumination from "./pages/GlobalIllumination";
 
 function Layout({ children, lastUpdatedET }) {
   const { pathname } = useLocation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // routes that should NOT show navbar/footer
   const HIDE_CHROME = new Set([
@@ -44,40 +47,46 @@ function Layout({ children, lastUpdatedET }) {
     <>
       {!hideChrome && (
         <nav className="navbar">
-          <ul className="nav-links">
-            <li>
-              <Link to="/" className="logo-link">
-                <div className="logo-wrapper">
-                  <img
-                    src={name_logo}
-                    alt="Katelyn Clark logo"
-                    className="name-logo"
-                  />
-                  <img
-                    src={logo_layer}
-                    alt="Star overlay"
-                    className="logo-star"
-                  />
-                  <img
-                    src={logo_hover}
-                    alt="Star hover overlay"
-                    className="logo-star hover"
-                  />
-                </div>
-              </Link>
-            </li>
+          <Link to="/" className="logo-link">
+            <div className="logo-wrapper">
+              <img
+                src={name_logo}
+                alt="Katelyn Clark logo"
+                className="name-logo"
+              />
+              <img
+                src={logo_layer}
+                alt="Star overlay"
+                className="logo-star"
+              />
+              <img
+                src={logo_hover}
+                alt="Star hover overlay"
+                className="logo-star hover"
+              />
+            </div>
+          </Link>
 
+          <button 
+            className="hamburger"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X size={32} /> : <List size={32} />}
+          </button>
+
+          <ul className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
             <li>
-              <Link to="/about">About Me</Link>
+              <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About Me</Link>
             </li>
             <li>
-              <Link to="/programming">Programming</Link>
+              <Link to="/programming" onClick={() => setMobileMenuOpen(false)}>Programming</Link>
             </li>
             <li>
-              <Link to="/design">Design</Link>
+              <Link to="/design" onClick={() => setMobileMenuOpen(false)}>Design</Link>
             </li>
             <li>
-              <Link to="/games">Games</Link>
+              <Link to="/games" onClick={() => setMobileMenuOpen(false)}>Games</Link>
             </li>
 
             <div className="nav-icon-group">

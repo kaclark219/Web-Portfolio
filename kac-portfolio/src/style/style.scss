@@ -22,60 +22,157 @@ body {
     padding-right: 60px;
     @include sg-font(22px);
     background-color: $white;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    @include respond(1024) {
+        padding: 20px 30px;
+        padding-top: 15px;
+        gap: 0;
+    }
+    @include respond(640) {
+        padding: 15px 20px;
+        padding-top: 10px;
+    }
+    
+    .logo-link {
+        .logo-wrapper {
+            position: relative;
+            width: fit-content;
+            .name-logo {
+                width: 80%;
+                height: auto;
+                display: block;
+                @include respond(1024) {
+                    padding-top: 20px;
+                    padding-left: 20px;
+                }
+            }
+            .logo-star {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 80%;
+                height: auto;
+                pointer-events: none;
+                &.hover {
+                    opacity: 0;
+                }
+                @include respond(1024) {
+                    padding-top: 20px;
+                    padding-left: 20px;
+                }
+            }
+        }
+        &:hover, &:focus {
+            .logo-star.hover {
+                opacity: 1;
+            }
+            .logo-star:not(.hover) {
+                opacity: 0;
+            }
+        }
+    }
+    
+    .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        @include respond(1024) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding-top: 20px;
+            padding-right: 20px;
+            
+            svg {
+                color: $navy;
+                transition: color 0.3s ease;
+            }
+            &:hover, &:focus {
+                svg {
+                    color: $navy-hover;
+                }
+            }
+        }
+    }
+    
     .nav-links {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
-        .logo-link {
-            .logo-wrapper {
-                position: relative;
-                width: fit-content;
-                .name-logo {
-                    width: 80%;
-                    height: auto;
-                    display: block;
-                }
-                .logo-star {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 80%;
-                    height: auto;
-                    pointer-events: none;
-                    &.hover {
-                        opacity: 0;
-                    }
-                }
-            }
-            &:hover, &:focus {
-                .logo-star.hover {
-                    opacity: 1;
-                }
-                .logo-star:not(.hover) {
-                    opacity: 0;
-                }
+        flex-grow: 1;
+        @include respond(1024) {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: $white;
+            flex-direction: column;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            display: none;
+            justify-content: flex-start;
+            flex-grow: initial;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+            gap: 0;
+
+            &.mobile-open {
+                display: flex;
             }
         }
+        
         svg {
             color: $navy;
         }
-        li:not(:first-child):not(.nav-icon) {
+        
+        li:not(.nav-icon) {
             position: relative;
             top: -15px;
             transition: background-color 0.3s ease;
+            @include respond(1024) {
+                top: 0;
+                margin: 10px 0;
+            }
             &:hover, &:focus {
                 color: $navy-hover;
                 animation: wiggle 0.5s forwards;
             }
         }
+        
         .nav-icon-group {
             display: flex;
             gap: 20px;
             align-items: center;
+            @include respond(1024) {
+                width: 100%;
+                justify-content: space-around;
+                display: none;
+                gap: 15px;
+                margin-top: 10px;
+                padding-top: 10px;
+                border-top: 1px solid #e0e0e0;
+            }
+            @include respond(640) {
+                gap: 15px;
+            }
             .nav-icon {
                 position: relative;
                 top: -15px;
+                @include respond(1024) {
+                    top: 0;
+                }
+                @include respond(640) {
+                    top: 0;
+                }
     
                 a {
                     display: inline-flex;
@@ -93,6 +190,12 @@ body {
                         }
                     }
                 }
+            }
+        }
+        
+        &.mobile-open .nav-icon-group {
+            @include respond(1024) {
+                display: flex;
             }
         }
     }
