@@ -136,6 +136,41 @@ const SECTIONS = [
                 caption: "Noise-based tile discoloration on the floor plane.",
             }
         ]
+    },
+    {   
+        id: "advanced-assignment-01",
+        title: "ADVANCED Assignment 1: KD-Trees",
+        date: "March 16, 2026",
+        description: "Implemented a naive KD-tree structure to optimize runtime for more complex models.",
+        blocks: [
+            {
+                type: "render",
+                title: "Render with KD-tree",
+                src: "/renders/output_img_kdtree.png",
+                alt: "Advanced Assignment 1 render",
+                caption: "Render of Stanford Bunny using the KD-tree optimization.",
+            },
+            {
+                type: "kv",
+                title: "KD-tree Performance Metrics",
+                data: {
+                    Performance: {
+                        kd_tree_build_time: "1.90095 ms",
+                        render_time_without_kd_tree: "134388 ms",
+                        render_time_with_kd_tree: "51859.2 ms",
+                        kd_tree_nodes: "6739",
+                        kd_tree_leaves: "3370",
+                    },
+                },
+            },
+            {
+                type: "render",
+                title: "Render without KD-tree",
+                src: "/renders/output_img_no_kdtree.png",
+                alt: "Advanced Assignment 1 render",
+                caption: "Render of Stanford Bunny using original CPU implementation.",
+            },
+        ]
     }
 ];
 
