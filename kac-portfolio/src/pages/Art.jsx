@@ -26,11 +26,26 @@ import brewscape_logos from "../assets/brewscape-logos.png"
 import type_inside from "../assets/type-inside.jpg"
 import type_outside from "../assets/type-outside.jpg"
 import type_stacked from "../assets/type-stacked.jpg"
+import { title } from "framer-motion/client";
 
-// wichacks website screenshots/assets
+import wichacks1 from "../assets/wichacks1.png"
+import wichacks2 from "../assets/wichacks2.png"
 
 function Art() {
     const designs = [
+    {
+        title:"WiCHacks 2026 Website & Branding",
+        year: "Oct. 2025 - Feb. 2026",
+        tools:[
+            { src: figma, label: "Figma", kind: "web" },
+            { src: procreate, label: "Procreate", kind: "art" },
+        ],
+        images: [
+            {src: wichacks1},
+            {src: wichacks2},
+        ],
+        inspiration: "For 2026, WiCHacks' first year with a dedicated theme (Widget's Garden Party), I designed, illustrated, and programmed the website & all of its assets. The illustration included a custom full-size piece for the hero, icons for the categories, interactive elements for the FAQ section, and illustration integrated into the sponsor logos. The website was built from scratch in React with SCSS."
+    },
     {
         title:"East Village Bakery Branding",
         year:"March-May 2025",
