@@ -10,10 +10,28 @@ import twod_ex from "../assets/2d-pipeline-example.png"
 import irises from "../assets/irises.png"
 import cnn_examples from "../assets/cnn-examples.png"
 import threed from "../assets/3d-pipeline-demo.png"
+import pom from "../assets/pom.png"
 import { image } from "framer-motion/client";
 
 function Projects() {
     const projects = [
+    {
+        image: pom,
+        dates: "February 2026",
+        title: "Pomochi",
+        description: "Winner of WiCHacks '26 Best Accessible UI/UX. Pomochi is a desktop focus companion that helps you stay productive using two real-time focus modes and a structured 25/5 Pomodoro system. Each session runs a fixed 25-minute work timer followed by a 5-minute break. In Camera Mode, Pomochi uses your webcam to detect distractions like phone usage or closed eyes, translating your habits into your virtual pet's mood and growth. In Screen Mode, it monitors keyboard and mouse activity across applications to determine whether you're actively working. Staying focused during the 25-minute work session helps your pet grow happier and healthier, while distraction slows its progress. Optional adaptive audio enhances the experience: calm lo-fi beats play while you're focused, and alert-style music cues you when attention drops.",
+        tags: [
+            { name: "JavaScript", color: "green" },
+            { name: "React", color: "blue" },
+            { name: "Electron", color: "blue" },
+            { name: "Python", color: "green" },
+            { name: "Flask", color: "blue" },
+            { name: "OpenCV", color: "blue" },
+            { name: "YOLO", color: "blue" },
+            { name: "MediaPipe", color: "blue" }
+        ],
+        link: "https://devpost.com/software/focus-buddy-wke39a",
+    },
     {
         image: threed,
         dates: "Sept.-Dec. 2025",
