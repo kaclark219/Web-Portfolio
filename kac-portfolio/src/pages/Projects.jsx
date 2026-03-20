@@ -19,7 +19,7 @@ function Projects() {
         image: pom,
         dates: "February 2026",
         title: "Pomochi",
-        description: "Winner of WiCHacks '26 Best Accessible UI/UX. Pomochi is a desktop focus companion that helps you stay productive using two real-time focus modes and a structured 25/5 Pomodoro system. Each session runs a fixed 25-minute work timer followed by a 5-minute break. In Camera Mode, Pomochi uses your webcam to detect distractions like phone usage or closed eyes, translating your habits into your virtual pet's mood and growth. In Screen Mode, it monitors keyboard and mouse activity across applications to determine whether you're actively working. Staying focused during the 25-minute work session helps your pet grow happier and healthier, while distraction slows its progress. Optional adaptive audio enhances the experience: calm lo-fi beats play while you're focused, and alert-style music cues you when attention drops.",
+        description: "Winner of WiCHacks '26 Best Accessible UI/UX. Pomochi is a desktop focus companion that helps you stay productive using two real-time focus modes & a structured 25/5 Pomodoro system. Each session runs a fixed 25-minute work timer followed by a 5-minute break. In Camera Mode, Pomochi uses your webcam to detect distractions like phone usage or closed eyes, translating your habits into your virtual pet's mood & growth. In Screen Mode, it monitors keyboard & mouse activity across applications to determine whether you're actively working. Staying focused during the work session helps your pet grow happier & healthier, while distraction slows its progress. Optional adaptive audio enhances the experience: calm lo-fi beats play while you're focused, & alert-style music cues you when attention drops.",
         tags: [
             { name: "JavaScript", color: "green" },
             { name: "React", color: "blue" },
@@ -36,7 +36,7 @@ function Projects() {
         image: threed,
         dates: "Sept.-Dec. 2025",
         title: "3D Graphics Pipeline",
-        description: "Developed a complete 3D graphics pipeline in Python that adheres to OpenGL conventions, with buffers, shader code, and a single rendering call that uses them in different contexts for flexibility. Shading systems include Phong, Gouraud, Gooch, image texture mapping, and procedural texture generation.",
+        description: "Developed a complete 3D graphics pipeline in Python that adheres to OpenGL conventions, with buffers, shader code, & a single rendering call that uses them in different contexts for flexibility. Shading systems include Phong, Gouraud, Gooch, image texture mapping, & procedural texture generation.",
         tags: [
             { name: "Python", color: "green" },
             { name: "PyGLM", color: "blue" },
@@ -50,7 +50,7 @@ function Projects() {
         image: cnn_examples,
         dates: "Sept.-Nov. 2025",
         title: "Art Style Classification with CNNs & Classical ML",
-        description: "Built and evaluated an art style classifier for famous paintings using both classical models (k-NN, decision tree forest, SVM) and a CNN with EfficientNetB0 transfer learning, achieving >84% testing accuracy across five categories. Created custom scripts to process & split images, then designed experiments comparing scikit-learn baselines to a TensorFlow pipeline, analyzing confusion matrices and feature maps to understand where models succeed and fail across styles.",
+        description: "Built & evaluated an art style classifier for famous paintings using both classical models (k-NN, decision tree forest, SVM) & a CNN with EfficientNetB0 transfer learning, achieving >84% testing accuracy across five categories. Created custom scripts to process & split images, then designed experiments comparing scikit-learn baselines to a TensorFlow pipeline, analyzing confusion matrices & feature maps to understand where models succeed & fail across styles.",
         tags: [
             { name: "Jupyter Notebook", color: "green" },
             { name: "Scikit-learn", color: "blue" },
@@ -70,7 +70,7 @@ function Projects() {
         img_align: "top15",
         dates: "Aug.-Sept. 2025",
         title: "2D Graphics Pipeline",
-        description: "I built a lightweight 2D graphics pipeline in Python that follows OpenGL conventions end-to-end: vertices flow through model to normalize to view transforms, then hit a rasterizer on CPU. Triangles are filled using a barycentric test with smooth per-pixel color interpolation and Sutherland-Hodgman polygon clipping, plus a scene graph for hierarchical modeling. Everything renders to a Pygame window with “shader-like” vertex attributes that can be extended beyond RGB.",
+        description: "I built a lightweight 2D graphics pipeline in Python that follows OpenGL conventions end-to-end: vertices flow through model to normalize to view transforms, then hit a rasterizer on CPU. Triangles are filled using a barycentric test with smooth per-pixel color interpolation & Sutherland-Hodgman polygon clipping, plus a scene graph for hierarchical modeling. Everything renders to a Pygame window with “shader-like” vertex attributes that can be extended beyond RGB.",
         tags: [
             { name: "Python", color: "green" },
             { name: "PyGLM", color: "blue" },
@@ -84,7 +84,7 @@ function Projects() {
         image: rr,
         dates: "Feb.-May 2025",
         title: "Reader's Recs",
-        description: "A social cataloging platform offering personalized book recommendations, user reviews, collection organization, and community features. The built-in ML recommendation algorithm allows users to discover new books based on their reading history and preferences. Reader's Recs achieved 2x higher satisfaction than Goodreads in a user study (5.2 vs. 2.6 out of 7) and the recommendations got a 1.1986 cosine similarity ratio comparing the model's recommendations to actual reading history of 100+ users.",
+        description: "A social cataloging platform offering personalized book recommendations, user reviews, collection organization, & community features. The built-in ML recommendation algorithm allows users to discover new books based on their reading history & preferences. Reader's Recs achieved 2x higher satisfaction than Goodreads in a user study (5.2 vs. 2.6 out of 7) & the recommendations got a 1.1986 cosine similarity ratio comparing the model's recommendations to actual reading history of 100+ users.",
         tags: [
             { name: "Python", color: "green" },
             { name: "Flask", color: "blue" },
@@ -104,7 +104,7 @@ function Projects() {
         image: spotifyviz,
         dates: "March-April 2025",
         title: "Spotify Music Visualizer",
-        description: "Real-time music visualization tool connected to Spotify's Web Playback API that generates dynamic 3D visualizations based on song data, while analyzing audio features like frequency and volume in real time. The reactive user interface changes colors and styles based on user preferences and the genre of the music playing, delivering an engaging and customizable listening experience.",
+        description: "Real-time music visualization tool connected to Spotify's Web Playback API that generates dynamic 3D visualizations based on song data, while analyzing audio features like frequency & volume in real time. The reactive user interface changes colors & styles based on user preferences & the genre of the music playing, delivering an engaging & customizable listening experience.",
         tags: [
             { name: "Svelte", color: "blue" },
             { name: "TypeScript", color: "green" },
@@ -119,7 +119,7 @@ function Projects() {
         image: autoviz,
         dates: "Sept.-Dec. 2024",
         title: "AUTOVIZ",
-        description: "Part of a larger research project, AUTOVIZ is an AI-powered data visualization tool that automatically generates insightful visualizations from raw datasets and user input contextualization. I co-authored the connected research paper comparing AUTOVIZ to other tools and highlighting its adaptability for non-technical users.",
+        description: "Part of a larger research project, AUTOVIZ is an AI-powered data visualization tool that automatically generates insightful visualizations from raw datasets & user input contextualization. I co-authored the connected research paper comparing AUTOVIZ to other tools & highlighting its adaptability for non-technical users.",
         tags: [
             { name: "Python", color: "green" },
             { name: "OpenAI Assistants API", color: "blue" },
@@ -136,7 +136,7 @@ function Projects() {
         img_align: "top",
         dates: "Nov. 2024",
         title: "Make It Make Cents",
-        description: "Created for Capital One's Challenge at TAMU Datathon 2024, this project was developed as a solution to low financial literacy skills in children and young teens. I designed and programmed this project alone, and won \"Best Domain\" from Major League Hacking for my submission.",
+        description: "Created for Capital One's Challenge at TAMU Datathon 2024, this project was developed as a solution to low financial literacy skills in children & young teens. I designed & programmed this project alone, & won \"Best Domain\" from Major League Hacking for my submission.",
         tags: [
             { name: "Svelte", color: "blue" },
             { name: "HTML", color: "green" },
@@ -153,7 +153,7 @@ function Projects() {
         img_align: "top",
         dates: "March-May 2024",
         title: "Fast Food POS Web Application",
-        description: "A web application developed in an Agile team to allow authenticated users to view the menu, place orders, view/complete kitchen tickets, edit menu items/ingredients, and view monetary reports; includes integration of multiple APIs for user accessibility such as multilingual translation, built-in zoom features, etc..",
+        description: "A web application developed in an Agile team to allow authenticated users to view the menu, place orders, view/complete kitchen tickets, edit menu items/ingredients, & view monetary reports; includes integration of multiple APIs for user accessibility such as multilingual translation, built-in zoom features, etc..",
         tags: [
             { name: "JavaScript", color: "green" },
             { name: "TypeScript", color: "green" },
@@ -170,7 +170,7 @@ function Projects() {
         image: raytracer,
         dates: "Oct.-Nov. 2023",
         title: "Ray Tracer",
-        description: "Created for a final project, a recursive ray tracer in OpenGL using C++ and tinyobjloader that can handle spheres, planes, imported .obj geometry, as well as mirrored surfaces and multiple light sources/shadows. The entire scene can render in about 3 seconds in release mode.",
+        description: "Created for a final project, a recursive ray tracer in OpenGL using C++ & tinyobjloader that can handle spheres, planes, imported .obj geometry, as well as mirrored surfaces & multiple light sources/shadows. The entire scene can render in about 3 seconds in release mode.",
         tags: [
             { name: "C++", color: "green" },
             { name: "OpenGL", color: "blue" },
