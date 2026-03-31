@@ -171,7 +171,29 @@ const SECTIONS = [
                 caption: "Render of Stanford Bunny using original CPU implementation.",
             },
         ]
-    }
+    },
+    {
+        id: "assignment-05",
+        title: "BASIC Assignment 5: Reflection",
+        date: "March 31, 2026",
+        description: "Added support for reflective materials, allowing for recursive ray tracing to create mirror-like surfaces.",
+        blocks: [
+            {
+                type: "render",
+                title: "CPU Reflection Render",
+                src: "/renders/reflection-cpu.png",
+                alt: "Submission 5 render",
+                caption: "Render with reflective materials.",
+            },
+            {
+                type: "render",
+                title: "GPU Reflection Render",
+                src: "/renders/reflection-gpu.png",
+                alt: "Submission 5 render",
+                caption: "Render with reflective materials.",
+            }
+        ]
+    },
 ];
 
 function Block({ block, sectionId }) {
