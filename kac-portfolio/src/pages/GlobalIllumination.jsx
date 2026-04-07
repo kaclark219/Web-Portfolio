@@ -194,6 +194,67 @@ const SECTIONS = [
             }
         ]
     },
+    {   
+        id: "advanced-assignment-04",
+        title: "ADVANCED Assignment 4: Photon Mapping",
+        date: "April 07, 2026",
+        description: "Implemented photon mapping & tested different numbers of photons.",
+        blocks: [
+            {
+                type: "render",
+                title: "1000 Photon Render",
+                src: "/renders/photon-1000.png",
+                alt: "Advanced Assignment 4 render",
+                caption: "Render of modified Cornell Box scene with 1000 photons.",
+            },
+            {
+                type: "render",
+                title: "1000 Photon Map Render",
+                src: "/renders/photon-map-1000.png",
+                alt: "Advanced Assignment 4 render",
+                caption: "Scene with 1000 photon map overlay.",
+            },
+            {
+                type: "render",
+                title: "10000 Photon Render",
+                src: "/renders/photon-10000.png",
+                alt: "Advanced Assignment 4 render",
+                caption: "Render of modified Cornell Box scene with 10000 photons.",
+            },
+            {
+                type: "render",
+                title: "10000 Photon Map Render",
+                src: "/renders/photon-map-10000.png",
+                alt: "Advanced Assignment 4 render",
+                caption: "Scene with 10000 photon map overlay.",
+            },
+            {
+                type: "render",
+                title: "100000 Photon Render",
+                src: "/renders/photon-100000.png",
+                alt: "Advanced Assignment 4 render",
+                caption: "Render of modified Cornell Box scene with 100000 photons.",
+            },
+            {
+                type: "render",
+                title: "100000 Photon Map Render",
+                src: "/renders/photon-map-100000.png",
+                alt: "Advanced Assignment 4 render",
+                caption: "Scene with 100000 photon map overlay.",
+            },
+            {
+                type: "kv",
+                title: "Photon Mapping Performance Metrics",
+                data: {
+                    Performance: {
+                        photon_time_1000: "133574 ms",
+                        photon_time_10000: "159401 ms",
+                        photon_time_100000: "393827 ms",
+                    },
+                },
+            },
+        ]
+    },
 ];
 
 function Block({ block, sectionId }) {
