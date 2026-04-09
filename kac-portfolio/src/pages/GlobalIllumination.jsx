@@ -255,6 +255,28 @@ const SECTIONS = [
             },
         ]
     },
+    {
+        id: "assignment-06",
+        title: "BASIC Assignment 6: Refraction",
+        date: "April 09, 2026",
+        description: "Added support for refractive materials, allowing for recursive ray tracing to create glass-like surfaces.",
+        blocks: [
+            {
+                type: "render",
+                title: "CPU Refraction Render",
+                src: "/renders/transmission-output.png",
+                alt: "Submission 6 render",
+                caption: "Render with refractive materials.",
+            },
+            {
+                type: "render",
+                title: "GPU Refraction Render",
+                src: "/renders/transmission-gpu-output.png",
+                alt: "Submission 6 render",
+                caption: "Render with refractive materials.",
+            }
+        ]
+    },
 ];
 
 function Block({ block, sectionId }) {
