@@ -197,7 +197,7 @@ const SECTIONS = [
     {   
         id: "advanced-assignment-04",
         title: "ADVANCED Assignment 4: Photon Mapping",
-        date: "April 07, 2026",
+        date: "April 08, 2026",
         description: "Implemented photon mapping & tested different numbers of photons.",
         blocks: [
             {
