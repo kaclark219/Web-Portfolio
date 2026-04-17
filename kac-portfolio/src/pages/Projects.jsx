@@ -11,10 +11,24 @@ import irises from "../assets/irises.png"
 import cnn_examples from "../assets/cnn-examples.png"
 import threed from "../assets/3d-pipeline-demo.png"
 import pom from "../assets/pom.png"
+import glitter from "../assets/glitter-texture.png"
 import { image } from "framer-motion/client";
 
 function Projects() {
     const projects = [
+    {
+        image: glitter,
+        dates: "Feb.-April 2026",
+        title: "Procedural Glitter Texture",
+        description: "A procedural glitter texture shader that generates a realistic glitter effect by simulating individual flakes with randomized properties, creating a dynamic, sparkling surface that responds to lighting conditions. The shader uses a lattice-space cell lookup driven by a deterministic hash to position flakes with jitter, blending circular & hexagonal shapes for natural variation, and includes a triplanar fallback for consistent wrapping across object orientations.",
+        tags: [
+            { name: "C++", color: "green" },
+            { name: "Cuda", color: "green" },
+            { name: "CMake", color: "blue" },
+            { name: "Linear Algebra", color: "pink" },
+        ],
+        link: "https://github.com/kaclark219/glitter-rendering",
+    },
     {
         image: pom,
         dates: "February 2026",
