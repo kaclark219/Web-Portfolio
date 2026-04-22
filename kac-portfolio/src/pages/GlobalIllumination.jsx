@@ -277,6 +277,56 @@ const SECTIONS = [
             }
         ]
     },
+    {
+        id: "assignment-07",
+        title: "BASIC Assignment 7: Tone Reproduction",
+        date: "April 22, 2026",
+        description: "Added support for both perceptual & photographic tone reproduction.",
+        blocks: [
+            {
+                type: "render",
+                title: "Ward Low-Light Render",
+                src: "/renders/low_ward.png",
+                alt: "Submission 7 render",
+                caption: "Perceptual tone reproduction under low-range lighting.",
+            },
+            {
+                type: "render",
+                title: "Reinhard Low-Light Render",
+                src: "/renders/reinhard_low.png",
+                alt: "Submission 7 render",
+                caption: "Photographic tone reproduction under low-range lighting.",
+            },
+            {
+                type: "render",
+                title: "Ward Medium-Light Render",
+                src: "/renders/med_ward.png",
+                alt: "Submission 7 render",
+                caption: "Perceptual tone reproduction under medium-range lighting.",
+            },
+            {
+                type: "render",
+                title: "Reinhard Medium-Light Render",
+                src: "/renders/reinhard_med.png",
+                alt: "Submission 7 render",
+                caption: "Photographic tone reproduction under medium-range lighting.",
+            },
+            {
+                type: "render",
+                title: "Ward High-Light Render",
+                src: "/renders/high_ward.png",
+                alt: "Submission 7 render",
+                caption: "Perceptual tone reproduction under high-range lighting.",
+            },
+            {
+                type: "render",
+                title: "Reinhard High-Light Render",
+                src: "/renders/reinhard_high.png",
+                alt: "Submission 7 render",
+                caption: "Photographic tone reproduction under high-range lighting.",
+            },
+        ]
+    },
 ];
 
 function Block({ block, sectionId }) {
