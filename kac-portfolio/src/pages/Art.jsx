@@ -30,9 +30,23 @@ import { title } from "framer-motion/client";
 
 import wichacks1 from "../assets/wichacks1.png"
 import wichacks2 from "../assets/wichacks2.png"
+import arirang1 from "../assets/arirang1.jpg"
+import arirang2 from "../assets/arirang2.jpg"
 
 function Art() {
     const designs = [
+    {
+        title:"ARIRANG Tour Stickers - Arlington Stops",
+        year: "April 2026",
+        tools:[
+            { src: procreate, label: "Procreate", kind: "art" },
+        ],
+        images: [
+            {src: arirang1},
+            {src: arirang2},
+        ],
+        inspiration: "Illustrated and produced two sticker designs to give out as freebies for the BTS ARIRANG World Tour stop in Arlington, TX. The stickers were designed with both the traditional Korean themes of ARIRANG and western motifs."
+    },
     {
         title:"WiCHacks 2026 Website & Branding",
         year: "Oct. 2025 - Feb. 2026",
@@ -53,8 +67,8 @@ function Art() {
             { src: illustrator, label: "Illustrator", kind: "adobe" },
             { src: photoshop, label: "Photoshop", kind: "adobe" },
             { src: indesign, label: "InDesign", kind: "adobe" },
-            { src: procreate, label: "Procreate", kind: "art" },
             { src: figma, label: "Figma", kind: "web" },
+            { src: procreate, label: "Procreate", kind: "art" },
         ],
         images:[
             { src: bakery_window },
