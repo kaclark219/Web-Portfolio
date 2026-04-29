@@ -12,6 +12,7 @@ import cnn_examples from "../assets/cnn-examples.png"
 import threed from "../assets/3d-pipeline-demo.png"
 import pom from "../assets/pom.png"
 import glitter from "../assets/glitter-texture.png"
+import global_illumination from "../assets/global-illumination.png"
 import { image } from "framer-motion/client";
 
 function Projects() {
@@ -29,6 +30,20 @@ function Projects() {
             { name: "Linear Algebra", color: "pink" },
         ],
         link: "https://github.com/kaclark219/glitter-rendering",
+    },
+    {
+        image: global_illumination,
+        dates: "Jan.-April 2026",
+        title: "CUDA-enabled Ray Tracer",
+        description: "Built a C++/CUDA ray tracer that renders the same scenes on either CPU or GPU, then extended it across the semester with Phong shading, supersampling, multiple lights, recursive reflection/refraction, procedural checkerboard & Perlin noise textures, photon mapping, & tone reproduction. I also implemented a naive KD-tree for triangle-heavy meshes like the Stanford Bunny, cutting one test render from about 134 s to 52 s while the tree built in under 2 ms.",
+        tags: [
+            { name: "C++", color: "green" },
+            { name: "CUDA", color: "green" },
+            { name: "CMake", color: "blue" },
+            { name: "C", color: "green" },
+            { name: "Linear Algebra", color: "pink" },
+        ],
+        link: "/global-illumination",
     },
     {
         image: pom,
