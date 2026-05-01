@@ -12,6 +12,7 @@ import cnn_examples from "../assets/cnn-examples.png"
 import threed from "../assets/3d-pipeline-demo.png"
 import pom from "../assets/pom.png"
 import glitter from "../assets/glitter-texture.png"
+import inverse_rendering from "../assets/inverse-rendering.png"
 import global_illumination from "../assets/global-illumination.png"
 import { image } from "framer-motion/client";
 
@@ -21,7 +22,7 @@ function Projects() {
         image: glitter,
         dates: "Feb.-April 2026",
         title: "Procedural Glitter Texture",
-        description: "Built a fully procedural glitter material in C++ for a custom ray tracer, focused on how flakes are generated, shaded, & debugged. Flakes are placed with deterministic hash-driven lattice sampling plus jitter, then shaped by blending circular & hexagonal signed-distance forms with per-flake variation in shade, sparkle, height, & rotation. I integrated triplanar sampling for better wrapping on non-flat geometry & added bump-style normal perturbation from a generated height field before Phong lighting. I also created visualization passes for mask, height, normal response, & rotation to tune scale, feathering, flake size ranges, & sparkle behavior. The final result was tested in both CPU & CUDA render setups under warm & cool lighting to verify consistent glitter response.",
+        description: "Created a fully procedural glitter material in C++ for a custom ray tracer, focused on how flakes are generated, shaded, & debugged. Flakes are placed with deterministic hash-driven lattice sampling plus jitter, then shaped by blending circular & hexagonal signed-distance forms with per-flake variation in shade, sparkle, height, & rotation. I integrated triplanar sampling for better wrapping on non-flat geometry & added bump-style normal perturbation from a generated height field before Phong lighting. I also created visualization passes for mask, height, normal response, & rotation to tune scale, feathering, flake size ranges, & sparkle behavior. The final result was tested in both CPU & CUDA render setups under warm & cool lighting to verify consistent glitter response.",
         tags: [
             { name: "C++", color: "green" },
             { name: "CUDA", color: "green" },
@@ -32,10 +33,27 @@ function Projects() {
         link: "https://github.com/kaclark219/glitter-rendering",
     },
     {
+        image: inverse_rendering,
+        dates: "Jan.-April 2026",
+        title: "Inverse Rendering of Scene Lighting for Theatrical Lighting Reconstruction",
+        description: "As part of an independent study for the XR Live VIP program, I researched reconstructing interpretable theatrical lighting from images using a synthetic inverse-rendering pipeline. Instead of representing illumination as a latent field or environment map, the system predicts a small set of discrete light sources with meaningful attributes such as light type, light count, position, direction, color, intensity, and spotlight cone angle. The work centers on Blender-generated synthetic datasets, a modular family of neural models, and an evaluation workflow that measures both numerical accuracy and reconstruction plausibility.",
+        tags: [
+            { name: "Python", color: "green" },
+            { name: "Jupyter Notebook", color: "green" },
+            { name: "TensorFlow", color: "blue" },
+            { name: "Scikit-learn", color: "blue" },
+            { name: "Pillow", color: "blue" },
+            { name: "Pandas", color: "blue" },
+            { name: "NumPy", color: "blue" },
+            { name: "Matplotlib", color: "blue" },
+            { name: "Blender", color: "pink" },
+        ]
+    },
+    {
         image: global_illumination,
         dates: "Jan.-April 2026",
         title: "CUDA-enabled Ray Tracer",
-        description: "Built a C++/CUDA ray tracer that renders the same scenes on either CPU or GPU, then extended it across the semester with Phong shading, supersampling, multiple lights, recursive reflection/refraction, procedural checkerboard & Perlin noise textures, photon mapping, & tone reproduction. I also implemented a naive KD-tree for triangle-heavy meshes like the Stanford Bunny, cutting one test render from about 134 s to 52 s while the tree built in under 2 ms.",
+        description: "Implemented a C++/CUDA ray tracer that renders the same scenes on either CPU or GPU, then extended it across the semester with Phong shading, supersampling, multiple lights, recursive reflection/refraction, procedural checkerboard & Perlin noise textures, photon mapping, & tone reproduction. I also implemented a naive KD-tree for triangle-heavy meshes like the Stanford Bunny, cutting one test render from about 134 s to 52 s while the tree constructed in under 2 ms.",
         tags: [
             { name: "C++", color: "green" },
             { name: "CUDA", color: "green" },
@@ -80,7 +98,7 @@ function Projects() {
         image: cnn_examples,
         dates: "Sept.-Nov. 2025",
         title: "Art Style Classification with CNNs & Classical ML",
-        description: "Built & evaluated an art style classifier for famous paintings using both classical models (k-NN, decision tree forest, SVM) & a CNN with EfficientNetB0 transfer learning, achieving >84% testing accuracy across five categories. Created custom scripts to process & split images, then designed experiments comparing scikit-learn baselines to a TensorFlow pipeline, analyzing confusion matrices & feature maps to understand where models succeed & fail across styles.",
+        description: "Trained & evaluated an art style classifier for famous paintings using both classical models (k-NN, decision tree forest, SVM) & a CNN with EfficientNetB0 transfer learning, achieving >84% testing accuracy across five categories. Created custom scripts to process & split images, then designed experiments comparing scikit-learn baselines to a TensorFlow pipeline, analyzing confusion matrices & feature maps to understand where models succeed & fail across styles.",
         tags: [
             { name: "Jupyter Notebook", color: "green" },
             { name: "Scikit-learn", color: "blue" },
@@ -100,7 +118,7 @@ function Projects() {
         img_align: "top15",
         dates: "Aug.-Sept. 2025",
         title: "2D Graphics Pipeline",
-        description: "I built a lightweight 2D graphics pipeline in Python that follows OpenGL conventions end-to-end: vertices flow through model to normalize to view transforms, then hit a rasterizer on CPU. Triangles are filled using a barycentric test with smooth per-pixel color interpolation & Sutherland-Hodgman polygon clipping, plus a scene graph for hierarchical modeling. Everything renders to a Pygame window with “shader-like” vertex attributes that can be extended beyond RGB.",
+        description: "Designed a lightweight 2D graphics pipeline in Python that follows OpenGL conventions end-to-end: vertices flow through model to normalize to view transforms, then hit a rasterizer on CPU. Triangles are filled using a barycentric test with smooth per-pixel color interpolation & Sutherland-Hodgman polygon clipping, plus a scene graph for hierarchical modeling. Everything renders to a Pygame window with “shader-like” vertex attributes that can be extended beyond RGB.",
         tags: [
             { name: "Python", color: "green" },
             { name: "PyGLM", color: "blue" },
