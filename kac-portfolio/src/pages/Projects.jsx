@@ -14,10 +14,25 @@ import pom from "../assets/pom.png"
 import glitter from "../assets/glitter-texture.png"
 import inverse_rendering from "../assets/inverse-rendering.png"
 import global_illumination from "../assets/global-illumination.png"
+import enhanced_img_captioning from "../assets/enhanced-img-captioning.jpg"
 import { image } from "framer-motion/client";
 
 function Projects() {
     const projects = [
+    {
+        image: enhanced_img_captioning,
+        dates: "April-May 2026",
+        title: "Enhanced Image Captioning",
+        description: "A study in the impact of training popular image captioning models with more robust, detailed captions generated via Qwen2-VL-7B-Captioner. With a new custom dataset of >6,600 images (each with 5 enhanced captions) from Flickr8k, ViT-GPT2, BLIP, & CNN-LSTM models are fine-tuned on both the original & enhanced captions, then evaluated on the Flickr8k test set. The enhanced captions led to significant improvements across semantic metrics: BLIP Enhanced achieved a 32.07 CLIP score, demonstrating that richer training data can substantially boost the quality of language & image understanding. However, all enhanced models showed limitations when evaluated with n-gram metrics due to the shift in captioning style.",
+        tags: [
+            { name: "Python", color: "green" },
+            { name: "Hugging Face", color: "pink" },
+            { name: "PyTorch", color: "blue" },
+            { name: "NumPy", color: "blue" },
+            { name: "Generative AI", color: "pink" },
+        ],
+        link: "https://github.com/kaclark219/extended-image-captioning",
+    },
     {
         image: glitter,
         dates: "Feb.-April 2026",
